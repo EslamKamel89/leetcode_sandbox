@@ -5,5 +5,8 @@ Group Anagrams
 Top K Frequent Elements
 Ransom Note
 Two Sum
+Two Sum II
 
 revision on previously solved problems ---------------------------------------
+Contains Duplicate
+Two Sum

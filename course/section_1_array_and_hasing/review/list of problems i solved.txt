@@ -1,0 +1,9 @@
+problems i solved ---------------------------------------
+Valid Anagram
+Contains Duplicate
+Group Anagrams
+Top K Frequent Elements
+Ransom Note
+Two Sum
+
+revision on previously solved problems ---------------------------------------

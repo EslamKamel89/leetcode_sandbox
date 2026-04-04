@@ -6,7 +6,13 @@ Top K Frequent Elements
 Ransom Note
 Two Sum
 Two Sum II
+3Sum
+Subarray Sum Equals K
 
 revision on previously solved problems ---------------------------------------
 Contains Duplicate
 Two Sum
+Two Sum II
+Top K Frequent Elements
+
+

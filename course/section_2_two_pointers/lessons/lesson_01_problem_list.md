@@ -19,7 +19,7 @@
 ## 🔵 Fast & Slow (~7 problems)
 
 - Linked List Cycle <SOLVED>
-- Linked List Cycle II
+- Linked List Cycle II <SOLVED>
 - Happy Number
 - Find the Duplicate Number
 - Middle of Linked List (ADD)

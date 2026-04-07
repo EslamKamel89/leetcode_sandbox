@@ -1,7 +1,7 @@
 ## 🔵 Opposite Direction (~12 problems)
 
-- 3Sum Closest
-- 4Sum
+- 3Sum Closest <SOLVED>
+- 4Sum <SOLVED>
 - Container With Most Water
 - Trapping Rain Water
 - Valid Palindrome
@@ -18,7 +18,7 @@
 
 ## 🔵 Fast & Slow (~7 problems)
 
-- Linked List Cycle
+- Linked List Cycle <SOLVED>
 - Linked List Cycle II
 - Happy Number
 - Find the Duplicate Number
@@ -30,7 +30,8 @@
 
 ## 🔵 Same Direction (~12 problems)
 
-- Remove Duplicates (I, II)
+- Remove Duplicates (I) <SOLVED>
+- Remove Duplicates (II)
 - Remove Element
 - Merge Sorted Array
 - Sort Colors

@@ -2,7 +2,7 @@
 
 - 3Sum Closest <SOLVED>
 - 4Sum <SOLVED>
-- Container With Most Water
+- Container With Most Water <SOLVED>
 - Trapping Rain Water
 - Valid Palindrome
 - Valid Palindrome II
@@ -31,7 +31,7 @@
 ## 🔵 Same Direction (~12 problems)
 
 - Remove Duplicates (I) <SOLVED>
-- Remove Duplicates (II)
+- Remove Duplicates (II) <SOLVED>
 - Remove Element
 - Merge Sorted Array
 - Sort Colors

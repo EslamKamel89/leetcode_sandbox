@@ -14,6 +14,7 @@ Remove Duplicates from Sorted Array
 4Sum 
 Linked List Cycle II 
 Remove Duplicates (II)
+Container With Most Water
 
 
 revision on previously solved problems ---------------------------------------
@@ -27,3 +28,5 @@ Continuous Subarray Sum
 Ransom Note
 Linked List Cycle
 Remove Duplicates from Sorted Array
+Linked List Cycle II
+4Sum

@@ -20,7 +20,7 @@
 
 - Linked List Cycle <SOLVED>
 - Linked List Cycle II <SOLVED>
-- Happy Number
+- Happy Number <SOLVED>
 - Find the Duplicate Number
 - Middle of Linked List (ADD)
 - Palindrome Linked List
@@ -32,7 +32,7 @@
 
 - Remove Duplicates (I) <SOLVED>
 - Remove Duplicates (II) <SOLVED>
-- Remove Element
+- Remove Element <SOLVED>
 - Merge Sorted Array
 - Sort Colors
 - Move Zeroes

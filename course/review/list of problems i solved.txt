@@ -16,6 +16,9 @@ Linked List Cycle II
 Remove Duplicates (II)
 Container With Most Water
 
+Happy Number
+Remove Element 
+
 
 revision on previously solved problems ---------------------------------------
 Contains Duplicate

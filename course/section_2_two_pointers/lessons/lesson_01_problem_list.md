@@ -3,7 +3,7 @@
 - 3Sum Closest <SOLVED>
 - 4Sum <SOLVED>
 - Container With Most Water <SOLVED>
-- Trapping Rain Water
+- Trapping Rain Water <SOLVED>
 - Valid Palindrome
 - Valid Palindrome II
 - Sum of Square Numbers
@@ -21,7 +21,7 @@
 - Linked List Cycle <SOLVED>
 - Linked List Cycle II <SOLVED>
 - Happy Number <SOLVED>
-- Find the Duplicate Number
+- Find the Duplicate Number <SOLVED>
 - Middle of Linked List (ADD)
 - Palindrome Linked List
 - Intersection of Two Linked Lists

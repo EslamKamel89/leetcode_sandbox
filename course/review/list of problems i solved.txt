@@ -17,6 +17,8 @@ Remove Duplicates (II)
 Container With Most Water
 Happy Number
 Remove Element 
+Trapping Rain Water
+Find the Duplicate Number
 
 
 revision on previously solved problems ---------------------------------------
@@ -34,3 +36,6 @@ Linked List Cycle II
 4Sum
 Container With Most Water
 Remove Duplicates (II)
+Happy Number
+Remove Element 
+Valid Anagram

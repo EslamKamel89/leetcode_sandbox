@@ -19,6 +19,8 @@ Happy Number
 Remove Element 
 Trapping Rain Water
 Find the Duplicate Number
+Merge Sorted Array 
+Valid Palindrome 
 
 
 revision on previously solved problems ---------------------------------------
@@ -39,3 +41,6 @@ Remove Duplicates (II)
 Happy Number
 Remove Element 
 Valid Anagram
+Find the Duplicate Number
+Trapping Rain Water
+Group Anagrams

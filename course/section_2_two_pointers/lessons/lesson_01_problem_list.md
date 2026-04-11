@@ -4,7 +4,7 @@
 - 4Sum <SOLVED>
 - Container With Most Water <SOLVED>
 - Trapping Rain Water <SOLVED>
-- Valid Palindrome
+- Valid Palindrome <SOLVED>
 - Valid Palindrome II
 - Sum of Square Numbers
 - Two Sum IV
@@ -33,7 +33,7 @@
 - Remove Duplicates (I) <SOLVED>
 - Remove Duplicates (II) <SOLVED>
 - Remove Element <SOLVED>
-- Merge Sorted Array
+- Merge Sorted Array <SOLVED>
 - Sort Colors
 - Move Zeroes
 - Partition List

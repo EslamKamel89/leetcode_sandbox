@@ -21,6 +21,8 @@ Trapping Rain Water
 Find the Duplicate Number
 Merge Sorted Array 
 Valid Palindrome 
+Middle of Linked List (ADD)
+Sort Colors
 
 
 revision on previously solved problems ---------------------------------------
@@ -44,3 +46,6 @@ Valid Anagram
 Find the Duplicate Number
 Trapping Rain Water
 Group Anagrams
+Valid Palindrome
+Merge Sorted Array
+Ransom Note

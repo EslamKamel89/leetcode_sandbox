@@ -22,7 +22,7 @@
 - Linked List Cycle II <SOLVED>
 - Happy Number <SOLVED>
 - Find the Duplicate Number <SOLVED>
-- Middle of Linked List (ADD)
+- Middle of Linked List (ADD) <SOLVED>
 - Palindrome Linked List
 - Intersection of Two Linked Lists
 
@@ -34,7 +34,7 @@
 - Remove Duplicates (II) <SOLVED>
 - Remove Element <SOLVED>
 - Merge Sorted Array <SOLVED>
-- Sort Colors
+- Sort Colors <SOLVED>
 - Move Zeroes
 - Partition List
 - Remove Duplicates (Linked List I, II)

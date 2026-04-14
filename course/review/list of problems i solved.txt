@@ -23,6 +23,8 @@ Merge Sorted Array
 Valid Palindrome 
 Middle of Linked List (ADD)
 Sort Colors
+Valid Palindrome II
+Palindrome Linked List
 
 
 revision on previously solved problems ---------------------------------------
@@ -49,3 +51,6 @@ Group Anagrams
 Valid Palindrome
 Merge Sorted Array
 Ransom Note
+Middle of Linked List
+Sort Colors
+Valid Anagram

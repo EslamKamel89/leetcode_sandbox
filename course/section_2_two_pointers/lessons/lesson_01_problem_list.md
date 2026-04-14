@@ -5,7 +5,7 @@
 - Container With Most Water <SOLVED>
 - Trapping Rain Water <SOLVED>
 - Valid Palindrome <SOLVED>
-- Valid Palindrome II
+- Valid Palindrome II <SOLVED>
 - Sum of Square Numbers
 - Two Sum IV
 - 3Sum Smaller
@@ -23,7 +23,7 @@
 - Happy Number <SOLVED>
 - Find the Duplicate Number <SOLVED>
 - Middle of Linked List (ADD) <SOLVED>
-- Palindrome Linked List
+- Palindrome Linked List <SOLVED>
 - Intersection of Two Linked Lists
 
 ---

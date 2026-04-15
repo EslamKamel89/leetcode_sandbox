@@ -6,7 +6,7 @@
 - Trapping Rain Water <SOLVED>
 - Valid Palindrome <SOLVED>
 - Valid Palindrome II <SOLVED>
-- Sum of Square Numbers
+- Sum of Square Numbers <SOLVED>
 - Two Sum IV
 - 3Sum Smaller
 - K-diff Pairs
@@ -35,7 +35,7 @@
 - Remove Element <SOLVED>
 - Merge Sorted Array <SOLVED>
 - Sort Colors <SOLVED>
-- Move Zeroes
+- Move Zeroes <SOLVED>
 - Partition List
 - Remove Duplicates (Linked List I, II)
 - String Compression

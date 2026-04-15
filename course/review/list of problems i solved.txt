@@ -25,6 +25,8 @@ Middle of Linked List (ADD)
 Sort Colors
 Valid Palindrome II
 Palindrome Linked List
+Move Zeroes
+Sum of Square Numbers
 
 
 revision on previously solved problems ---------------------------------------
@@ -54,3 +56,6 @@ Ransom Note
 Middle of Linked List
 Sort Colors
 Valid Anagram
+Palindrome Linked List
+Valid Palindrome II
+Group Anagrams

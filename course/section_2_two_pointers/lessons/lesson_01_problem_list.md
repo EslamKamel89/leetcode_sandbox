@@ -7,7 +7,7 @@
 - Valid Palindrome <SOLVED>
 - Valid Palindrome II <SOLVED>
 - Sum of Square Numbers <SOLVED>
-- Two Sum IV
+- Two Sum IV <SOLVED>
 - 3Sum Smaller
 - K-diff Pairs
 - Find K Closest Elements
@@ -36,7 +36,7 @@
 - Merge Sorted Array <SOLVED>
 - Sort Colors <SOLVED>
 - Move Zeroes <SOLVED>
-- Partition List
+- Partition List <SOLVED>
 - Remove Duplicates (Linked List I, II)
 - String Compression
 - Reverse String (I, II)

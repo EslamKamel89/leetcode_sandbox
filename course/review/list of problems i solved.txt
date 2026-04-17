@@ -27,6 +27,8 @@ Valid Palindrome II
 Palindrome Linked List
 Move Zeroes
 Sum of Square Numbers
+Two Sum IV
+Partition List
 
 
 revision on previously solved problems ---------------------------------------
@@ -59,3 +61,6 @@ Valid Anagram
 Palindrome Linked List
 Valid Palindrome II
 Group Anagrams
+Move Zeroes
+Sum of Square Numbers
+Contains Duplicate

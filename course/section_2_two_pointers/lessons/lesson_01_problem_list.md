@@ -8,7 +8,7 @@
 - Valid Palindrome II <SOLVED>
 - Sum of Square Numbers <SOLVED>
 - Two Sum IV <SOLVED>
-- 3Sum Smaller
+- 3Sum Smaller <SOLVED>
 - K-diff Pairs
 - Find K Closest Elements
 
@@ -37,7 +37,7 @@
 - Sort Colors <SOLVED>
 - Move Zeroes <SOLVED>
 - Partition List <SOLVED>
-- Remove Duplicates (Linked List I, II)
+- Remove Duplicates (Linked List I, II) <SOLVED>
 - String Compression
 - Reverse String (I, II)
 - Reverse Vowels

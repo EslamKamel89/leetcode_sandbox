@@ -31,6 +31,8 @@ Two Sum IV
 Partition List
 Remove Duplicates (Linked List I, II)
 3Sum Smaller 
+String Compression
+K-diff Pairs
 
 
 revision on previously solved problems ---------------------------------------
@@ -69,3 +71,6 @@ Contains Duplicate
 Partition List
 Two Sum IV
 Valid Anagram
+3Sum Smaller
+Remove Duplicates (Linked List I, II)
+Ransom Note

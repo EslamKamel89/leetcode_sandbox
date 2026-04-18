@@ -9,7 +9,7 @@
 - Sum of Square Numbers <SOLVED>
 - Two Sum IV <SOLVED>
 - 3Sum Smaller <SOLVED>
-- K-diff Pairs
+- K-diff Pairs <SOLVED>
 - Find K Closest Elements
 
 (+ review: Two Sum II, 3Sum)
@@ -38,6 +38,6 @@
 - Move Zeroes <SOLVED>
 - Partition List <SOLVED>
 - Remove Duplicates (Linked List I, II) <SOLVED>
-- String Compression
+- String Compression <SOLVED>
 - Reverse String (I, II)
 - Reverse Vowels

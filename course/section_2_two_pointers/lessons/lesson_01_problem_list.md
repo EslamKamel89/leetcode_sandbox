@@ -10,7 +10,7 @@
 - Two Sum IV <SOLVED>
 - 3Sum Smaller <SOLVED>
 - K-diff Pairs <SOLVED>
-- Find K Closest Elements
+- Find K Closest Elements <SOLVED>
 
 (+ review: Two Sum II, 3Sum)
 
@@ -39,5 +39,5 @@
 - Partition List <SOLVED>
 - Remove Duplicates (Linked List I, II) <SOLVED>
 - String Compression <SOLVED>
-- Reverse String (I, II)
+- Reverse String (I, II) <SOLVED>
 - Reverse Vowels

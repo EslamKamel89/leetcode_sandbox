@@ -33,6 +33,7 @@ Remove Duplicates (Linked List I, II)
 3Sum Smaller 
 String Compression
 K-diff Pairs
+Reverse String (I, II)
 
 
 revision on previously solved problems ---------------------------------------
@@ -74,3 +75,11 @@ Valid Anagram
 3Sum Smaller
 Remove Duplicates (Linked List I, II)
 Ransom Note
+String Compression
+K-diff Pairs
+Contains Duplicate
+
+
+
+problem i can't solve ---------------------------------------
+Find K Closest Elements (can't solve this problem may be after i study binary search i could solve it)

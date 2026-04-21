@@ -78,7 +78,8 @@ Ransom Note
 String Compression
 K-diff Pairs
 Contains Duplicate
-
+Reverse String (I, II)
+Top K Frequent Elements
 
 
 problem i can't solve ---------------------------------------

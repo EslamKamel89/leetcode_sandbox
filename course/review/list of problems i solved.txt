@@ -34,6 +34,8 @@ Remove Duplicates (Linked List I, II)
 String Compression
 K-diff Pairs
 Reverse String (I, II)
+Intersection of Two Linked Lists
+Reverse Vowels
 
 
 revision on previously solved problems ---------------------------------------
@@ -80,7 +82,8 @@ K-diff Pairs
 Contains Duplicate
 Reverse String (I, II)
 Top K Frequent Elements
-
+Subarray Sum Equals K
+Two Sum
 
 problem i can't solve ---------------------------------------
 Find K Closest Elements (can't solve this problem may be after i study binary search i could solve it)

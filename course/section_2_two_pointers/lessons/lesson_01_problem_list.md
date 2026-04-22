@@ -24,7 +24,7 @@
 - Find the Duplicate Number <SOLVED>
 - Middle of Linked List (ADD) <SOLVED>
 - Palindrome Linked List <SOLVED>
-- Intersection of Two Linked Lists
+- Intersection of Two Linked Lists <SOLVED>
 
 ---
 
@@ -40,4 +40,4 @@
 - Remove Duplicates (Linked List I, II) <SOLVED>
 - String Compression <SOLVED>
 - Reverse String (I, II) <SOLVED>
-- Reverse Vowels
+- Reverse Vowels <SOLVED>

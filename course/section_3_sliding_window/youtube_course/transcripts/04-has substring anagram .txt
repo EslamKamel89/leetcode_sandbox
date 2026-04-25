@@ -1,0 +1,107 @@
+# has substring anagram 
+Hey programmers, Alvin here. Right now, let's go over the approach we can use for this has substring anagram problem.
+So, in this problem, we're given two strings. Here I have a string input greyhounds. I'm also given the target
+anagram of Hoy Hoy. What I want to do is return a boolean true or false indicating whether or not the anagram is
+found somewhere as a substring in the larger string here. So if I look for the characters hoi, recall that an anagram
+can have its characters rearranged. Right? In this particular example, it is actually the case that I could find an anagram of hoi as a substring in
+greyhound would be right here, right? Y ho. Calling that an anagram could have its characters appearing in any order.
+So for this particular input, you should return true. Let's take a look at another example. Let's say you're given
+this string and you're still given the target anagram of HOI. For this case,
+you should return false because there is no substring that contains an anagram of HOI. So if you can't find the substring
+anagram, you just return false. So let's talk about the approach here. For this particular problem, what we want to do
+is consider substrings. Something important about substrings is uh they're going to be a consecutive sequence of
+characters within a larger string. A substring is just like a subarray. Instead of dealing with an array, you're
+dealing with a string. We're also checking if the anagram exists anywhere in the string. Here, my anagram of hoi
+has three characters. So, I'm looking at substrings of length three. And based on
+what we've been practicing recently, we know that we can easily get all substrings of length three by just
+sliding some window throughout my string. So we're going to solve this using a sliding window strategy. It's
+going to be a little different though. Notice that this one doesn't deal with any numbers. All right. So we know we need to slide a window to consider
+different substrings. But how can we come up with checking if we actually have an anagram? Well, the key is going
+to be to use a set. So recall that your set data structure is something that has constant time insertion of elements and
+also constant time removal and constant time lookup. And so why is using a set a good idea in this problem? Well, a set
+has some very important characteristics. For one, the items in a set are unordered. And that's actually a good
+fit because an anagram could have its characters appearing in any order. And
+besides that, I also know that items in a set are necessarily going to be unique, which is actually an assumption
+that they give us in the problem. They tell us that the characters within the string as well as the characters in the anagram are all going to be unique. So
+those two characteristics do fit nicely with the usage of a set. All right. All right. So, how would this algorithm
+flow? For the most part, it's going to be our sliding window algorithm of a fixed size. We're just going to use a
+set throughout. So, we're going to start with an empty set. And like we said previously, we want the first step of
+the sliding window of a fixed size algorithm uh to just initialize and process the first k elements. In this
+particular example, because my anagram has a length of three, really my k or my window size is just three characters. So
+if I just grab the first three characters in my first window, I can just add them all uh into my set. So
+each character is one item of the set. Great. At this point, I can just check
+are the characters of my anagram do they exist within my set. Right now that's not the case. So this is not an anagram
+so far. So I need to keep going. Like we expect, if you want to do this efficiently, what you want to do is try
+to keep your operations uh as constant as possible as you move your window to the right. So, I'm going to do is I'm
+just going to remove my trailing character, right? So, I'm going to remove it from my set. And I'm also
+going to insert my leaning character. Going to add that into the set. So, I'll go ahead and remove the G, but then also
+add the Y. So, now it's as if I'm considering this next substring rey. And
+again, I check is my uh anagram hoi. Do those characters exist inside of my set?
+And they don't. So I keep going. I need to progress my window a little bit to the right. So I remove the R and add the
+H. That brings me to my next window. Again,
+I check are the characters of my anagram, are they present inside of the set? They're not. So I keep going. I
+remove the E and add the O like so. And at this point, I'm considering the
+substring yho. And now I check, does my anagram match the characters in my set?
+That is actually the case. So I know I just found a substring that contains the anagram. So I should just ultimately
+return true. Obviously, if you need to return false, then you're just going to iterate your sliding window all the way
+to the right. And if you never find a match, then you're just going to return false. Some very classic boolean logic
+there. So let's discuss the complexity of this one. So if we say that n is the length of my string and k is the length
+of the anagram I'm looking for, then the time complexity here is going to be o of n * k. And so where does this come from?
+And for the sake of sliding the window to the right, we know we're keeping the operations relatively efficient uh by
+just removing a character and also adding a character on every iteration as we slide to the right. So you're
+probably wondering where does the K come from? What we have to understand is the K comes from the check of checking if
+our original anagram if it matches the characters of our current set. To do
+that check, you're just going to really just iterate through the characters and make sure that each one exists. And of
+course, that will happen in K time because there are kers to verify inside of the set. In a similar way, the space
+complexity is going to be O of K. Now, really, the space complexity is going to be the size of the window because we
+have that many characters inside of our set. This is actually a nice efficient solution for this one. Uh do note that
+the complexity for this is a little different from the previous problems that we just did in the sliding window module. Mainly we have a factor of K
+within the time and space complexity. So for I think the last three problems we had a time complexity of Oven and a
+space complexity that was constant. Here it's a little different just based on the constraints in the problem. Like you
+expect time and space complexity can differ from problem to problem even when it comes to the same topic. And that
+feels okay because this problem is definitely a step up from the previous problems I just dealt with sums and
+products previously. Although they still use the sliding window algorithm.
+Hey programmers, Alvin here. Right now let's go over the Python walkthrough for this has substring anagram problem. So
+like we say in the approach video, we're going to solve this one using our sliding window with a fixed sized algorithm. And what we're going to do is
+create a set here to contain the characters. That way we can check if we have a matching anagram here. So I'll
+create a set and I do want to initialize this set with the characters of the very
+first window. And I know that the window size is really just going to be the length of the anagram. So for this
+particular example, my anagram is hoi. That means I want to check for a sliding window with a size of three here. So
+what I'll do is I'll just grab the first three characters or the first k character so to speak. So I'll say s and
+I'll go from index zero up to the length of the anagram. So length of anagram and
+Python syntax I could actually drop the zero like so. If you want you can maybe even declare like a k variable for this.
+It look more similar to code we written previously. And then that'll just look like this. So
+this is me processing my very first window. Right. And I'll call that my
+window set. Nice. So now that I have a set containing these three characters, what
+I want to do is check uh if that first window actually is a match. So be sure
+to do that. It's very common to forget to do this for the very first window. You have your sliding window algorithm.
+So I'm just going to check if my window set is equal to the set of the original
+characters of anagram. So I'll just create another set here. I'll call it my
+anagram set. Set set. This will be the set of the characters of the original anagram.
+Nice. And so what I'll do is just check if they match. Python has some really great syntax for this. All you need to
+do is check if they're double equals. And you're going to check if the items in the two sets are the same. Right? In
+other words, are these two sets totally equal? Great. So if that's the case, and I can return true because I just found a
+match. Uh otherwise I do need to check the other windows by sliding to the right. So I'm going to set up a for
+loop. I'll say for i in range go from the very beginning all the way up to but
+not including my length of s minus the
+length of the anagram which I have stored in this like k variable. So I'll use it over here. Just say k. The
+stopping condition here is very similar to what we've written in our last few problems. And so here what I'll do is
+the very classic sliding window logic. So I'm going to remove from my set. I'll
+say window set dot remove. I'm going to remove my trailing character which would be s at index i. Right? So in the very
+first iteration where I is zero we're going to remove the g. Then what I need to do is add the y here. So remove s sub
+i. And then on the other end, you want to add s at i + k, right? Because if my
+i is zero, if I do 0 plus three, I get one, two, and then three is the y right
+there. Cool. That'll bring me to my next window, which I should now check. So I
+can just check if this window set is equal to the anagram set. And if they
+match, then return true. Always having an early return true here. And only after I'm done with the for loop, if I
+never return true, then I never found the matching window. So then I can ultimately return false here. Before we
+give this a run, don't forget to return the true value here. Let's test it out.
+And there we have our solution for this one. Like we say in the approach video, if you say that n is the length of the
+string and then k is the length of the anagram, this would have an overall time complexity of n * k. It's pretty obvious
+that the n exists like right about here because we're iterating through roughly the length of our string. The k comes
+from this check over here. Although it's a simple double equals in Python, under the hood, this would actually have to
+iterate uh between one of our sets, right? And check if every member of that
+set is within the other, right? So this is really your k operation inside of your n loop. So that's why you have a
+total time complexity of n * k. Right? Space complexity here is just going to be K based on the size of the sets you
+create. So mainly your window set and also your anagram set. They're going to have exactly the number of characters
+that is in the original anagram here.

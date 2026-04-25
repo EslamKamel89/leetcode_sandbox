@@ -1,0 +1,69 @@
+
+# subarray target sum size k
+Hey programmers, Alvin here. Right now, I want to go over the approach we can use for the subarray target some size K
+Subarray Target Sum Size K
+problem. In this problem, we're given three arguments. Our first argument is just going to be an array of some
+numbers. Our second argument is going to be a target sum. And our third argument
+is going to be the size k. Here we're considering a subarrays of size three
+that sum up to seven. And what we want to do is count those. So how many subarrays of size three sum up to seven?
+The result here should be five because there are five different subarrays that meet that criteria. Here's the first
+subarray. Of course, 2 plus 3+ 2 is indeed seven and it's three elements. So that's good. Here's number two, number
+three, number four, and then your fifth and final. So really, this is going to
+be a counting problem for us, but of course we're going to utilize that sliding window strategy. We know that
+this problem is a good fit for our sliding window because, of course, we're considering subarrays of some fixed
+size. So what I want to do to get going is just process the first k elements depending on my window size. So looking
+at my very first window here it is. I want to just find the sum of them because of course I'm looking for
+something that matches the target sum in the long run. So 2 + 3 + 2 gives me 7.
+And we're just going to start by implementing the optimal solution because by now you should be familiar with how it's going to go. So in
+addition to the sum of our current window, what I also want to do is keep track of the global count, right? That's
+going to be the answer I eventually return. Right now, my sum is exactly the
+target. So I should count it. So right now, my count is one. And I'm ready to move my window. So I'm ready to slide it
+to the right. Like we expect, what you want to do is remove your trailing element from your sum and then add your
+leading element into the sum. And so I do a minus2 and a plus two which really doesn't have an effect on changing the
+sum but it is going to be considering the next window. It's still the case that my sum matches the target. So I
+should also increment my count. Then I continue. I do a minus3 and also a plus
+three. So my sum for this window is still seven. So I should count it. Keep moving to the right. Here I do a minus2
+and plus one. That gives me a current sum of six. six is not equal to the target of seven. So I don't increment my
+counter. Keep this pattern going. I'm going to subtract my trailing element of two and add my leading element of three.
+Now my sum is seven. Because seven matches my target, I increment my count. And we're going to continue this logic,
+updating our current sum and comparing it against our target of seven until we
+find any matches. You're going to reach your next match
+right about here. Here you have a sum of seven. it matches your target of seven. So you should increment your count one
+more time. And once you hit the end of your array, you're done considering all possible
+subarrays of size three. You just go ahead and return the count over here. So
+by now you should anticipate what the complexity of this is. This algorithm just has an O of N runtime where N is
+going to be the length of the nums array. Space complexity here is going to be constant. It's really the same analysis that we did for the previous
+two problems. So, what I want you to do is try to code this one up on your own. If you get stuck, you can catch me in the walkthrough video.
+Hey programmers, Alvin here. Right now, let's go over the Python walkthrough for the subarray target some size K problem.
+So, of course, we want to continue the theme. As of late, we want to solve this one using our sliding window of a fixed
+size algorithm. And so, to get going, I'm going to process my first k elements. Here, we still want to find
+the sum of our subarrays, but this time we want to count them. So I'll still have my we'll say current sum initialize
+it to zero and I just want to process the first k elements. So say for i in
+range go from zero just up to k and I want to add the element. So current sum
+plus equals nums at index i. The long run I want some count variable
+which I'm going to return at the very end. And do bear in mind that because you've already processed the first
+window, you should check uh the sum of that window and see if it matches the target. So here I might just use a
+Python turnary so I can check. All right, I'll set it I'll set the count equal to one if the current sum is equal
+to the target. Otherwise, if it's not equal to the target, then initialize it to zero. Cool. uh for our sliding window
+with a fixed size. The initial window is kind of processed separately. So it's important to make sure you still count
+it if necessary. And then this code now over here the for loop is going to handle all other windows. Right? So I'll
+say for i in range go from zero go up to length of nums
+minus k. So this has the effect of stopping k elements from the right edge of my list here. And because I'm dealing
+with some logic this is straightforward. Just do current sum subtract out your trailing element. So nums at i
+and then add in your leading element which is at index i plus k. Now you need
+to work in the specific logic for this problem which is just checking your current sum. Right? Check if the sum of
+this window it matches the target and if it does then just count it. So count plus equals 1. That's all there is to
+it. Should be very comfortable with seeing this pattern again. Great. So it looks like our code is passing.
+Something I want to emphasize here is I think the most common mistake for uh some of your sliding window of fixed
+size problems is to not correctly uh consider the very first window because I handle it specially using this for loop.
+Be sure to check if that initial window sum is already equal to the target. Then you want to initialize your count to
+one. Otherwise you set it equal to zero. Cool. Really uh the first window is handled specially in this code and all
+subsequent windows are handled in this code. Hey programmers, I wanted to take a
+quick break to tell you about my complete data structures and algorithms course at structy.net. If you enjoy my
+teaching style, then I think you'll really love my full course. The sliding window material we've already been
+working through is actually taken straight from my course at struct.net. There I'll teach you everything you need
+to know to pass your DSA interviews. There I'll cover sliding window trees,
+graphs, dynamic programming, and much more. The best part is I'll be there to explain each problem using the same
+clear animations and code walkthroughs that you're used to. That's strructy.net. I'll leave a link in the
+video description if you're interested. And now, let's get back into our sliding window course.
+Has Substring Anagram

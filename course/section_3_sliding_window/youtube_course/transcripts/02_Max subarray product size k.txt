@@ -1,0 +1,115 @@
+
+# Max subarray product size k
+Hey programmers, Alvin here. Right now, let's go over the max subarray product size K problem. This is going to be a
+nice buildoff of our very last problem practicing the sliding window algorithm. So here we're still given an array of
+some numbers as well as a size K. What we want to do is consider a different subarrays of size K or size four here
+and find the one with the maximal product. So for this very first subarray, it has a total product of 24.
+Of course, the product is just going to be what we get when we multiply all the elements together. If I look at some
+other subarray here, this one at the very end has a total product of -780.
+This one in the middle has a product of 270. And this would actually be the answer I want to return. In other words,
+you should return 270 because it's the maximum product we can get of any such subarray. Great. So it should be pretty
+clear that this is going to be a small variation of the very last problem. So we can practice that sliding window. So
+like you expect because I want to find the maximum here. Just maintain a max product variable. So we'll start by
+talking about the naive sliding window strategy just for some nice review. So now that we have my window at the very front here, you would need to multiply
+these elements together, right? So there total product is 24 because you have no maximum product so far. That will be
+your current maximum. Then you just slide your window to the right. You get the product of these four elements.
+You'll get -72. That's not going to replace the maximum so far. So you go to
+the right. Here you have a total product of 54. Still don't replace it. Here you
+have a total product of 720. So you would replace your max product. This
+algorithm would continue all the way through to the end of your array here. And of course 720 would be your ultimate
+answer. We already said how this algorithm so far has a time complexity of n * k. Right? It's really the same
+analysis that we did last time. Uh the issue with this algorithm so far is that factor of K, right? Because we're just
+naively multiplying all of the elements within any particular window, we'll have to do K operations for every window that
+we look at. And so what I want to do is get rid of that K. And here's the optimization. Instead of looking at
+every single element within your window, you don't want to do that. Instead, just try to look at two elements at a time.
+So here's what I mean. We're going to start our algorithm at the very front. And in addition to our max product
+variable, we're also going to track our current product. This is going to be the current product of our window so far.
+Because I'm at the very start of my algorithm, you just need to process those first elements. In other words, just go ahead and multiply them
+together. In other words, 1 * 4 * 1 * 6 gives me 24. I can go ahead and set that
+24 as my maximum thus far. Now that you want to slide your window to the right, what you could do is just remove that
+trailing element uh from your current product. Here you want to do the opposite operation. So over time I was
+calculating the product. In other words, multiplying things together. When I want to remove some number from the product,
+I just divide, right? Because division is the opposite of multiplication. So if I do my 24 divide by one, it really
+keeps my current product at 24. On the flip side, I have this uh number of -3
+that's going to enter my product within the next window. So, I need to multiply byg -3. So, I multiply my current
+product of 24 by -3 gives me -72. And that would indeed be the total product
+of that next window here. In other words, 4 * 1 * 6 * -3 is -72. -72 is not
+going to replace my maximum. So I can continue sliding my window. I need to remove this four from my current
+product, which means I should divide it, right? So I divide four into my72.
+That gives me8. And then also be sure to multiply your leading element. So I do 3
+* a8 here, giving me my next window of -54. Again, 54 is not going to replace
+my max product. So I keep sliding. I go ahead and divide by 1 and multiply by5.
+That means my next window has a total product of 270. 270 would replace my
+maximum product because of course it's bigger. So my max product right now is 270. Keep sliding to the right. In my
+next frame, what I do is divide by 6 and multiply by two giving me 90. 90 is not
+bigger than my max product. So I keep going to the right. Here I need to divide by -3 and multiply by 26. And
+this final window has a total product of -780. Of course, that's also not going to replace my max product. Now that I'm
+done sliding my window all the way through the right, the final value I have inside of my max product would be
+my final answer. So the answer here we should return is 270. Like we said previously, this is our optimized
+sliding window strategy. The type complexity for this is just O of N. Right? When we considered finding the
+next product that we have to look at, we only did a constant number of operations, right? What we said was we
+just divide by our trailing element and multiply by our leading element. That would be true no matter the size of our
+window. Right? Here K is four, but even if K was 100, you would still only need to divide by one thing, then multiply by
+another thing. Time complexity here is O of N. Space complexity is also going to be O of one, just like last time. All
+right. All right. So, what I want you to do is try to code up this one on your own. It's going to be very similar to our last problem. It's a good practice
+for getting this sliding window algorithm down pat. If you get stuck, I'll see you in the walkthrough video.
+Hey programmers, Alvin here. Right now, let's go over the Python walkthrough for this max subarray product size K
+problem. So, this is just going to be a small variation of our last problem. Uh, giving us another chance to practice the
+optimized sliding window algorithm. So, I'll jump right in. I'm going to go immediately to the optimized version.
+going to create my current product variable because I know the first step is to just process the first K elements,
+right? Get that first window. So I'm going to iterate for we'll say I in range
+and I'll go from zero just to the first K. And what I want to do is multiply into the product
+multiply this current element. So nums at I great. So now that I have the
+product of the first window, I can set that as the max so far.
+Nice. And I'll bring in an example here just so we can talk about it a bit. So
+we already handle this initial window. Now I need some other loop that's going to slide this window all the way to the right. So I can consider every subarray
+here. So I'm going to start still at index zero as I iterate here. But this time I want to stop around length of
+nums minus k. This has the effect of stopping roughly k elements from the end
+of the list. Right? And like we said in the approach video, the important thing is that we do a constant number of steps
+as we slide our window. Right? So right now my window's here. If I want to go to the next window, I need to remove the
+four from my product, but also incorporate -9 into my product and I
+need to use the appropriate operations for that. Right? So, because I'm dealing with a product, I'm going to divide out
+that trailing element of four. So, I can say divide equals nums at index i. On
+the flip side, I want to multiply in multiply in nums at i plus k. Nice. So
+doing a quick check here. If I is zero, that means I would remove four from my product. That's good. And if I is still
+zero and I do ks3, that means I'm indexing at three. So that's 0 1 2 3. I
+would be multiplying in my negative 9, which is also good to get my next window. From here, you just do your
+classic max value logic. So check if your current is bigger than your max product. And if it is, you can replace
+it. So can say max product equals current product. Nice. Then after you're
+done sliding your window, just return the maximum. And this will be our optimized version.
+Really, really similar to our last problem. Just want to give you another look at this algorithm. Great. Another
+way you could write this is maybe using the built-in max function. So we could say max product equals just call max
+pass in those two variables would be the same way to write this just in a oneliner.
+Really the important thing here is that you go for that O of N runtime right I have K iterations in this for loop and
+then the rest of that input array is going to be iterated in this for loop here for which I only do a constant
+number of operations each time. Notice that I did not nest any loops here. Hey programmers, Alvin here. Right now I
+just want to give us a quick summary of the algorithm that we've been implementing lately. So for the last two problems we've been exploring the
+sliding window strategy and in particular we've been looking at the sliding window with a fixed size K. And
+so naturally this is good for considering subarrays or substrings of one size. The one size being that K
+argument. And like I'm saying here, not only is this strategy good for considering subarrays within a larger
+array, but it's also great for considering substrings within a larger string. And we'll see that later on. It
+really doesn't change in any particular way. And so let's summarize the steps that we've been using so far. And I
+think for the most part, this is going to be a good recipe whenever you're applying the sliding window with a fixed size strategy. And so your first step is
+going to be to process the first K elements into some collection. And what you've noticed thus far is that this
+process actually happens separately. Usually we have an initial uh loop that's going to process the first K
+elements to get our initial window rolling. And then from there what you want to do
+is move the window to the right using some other loop. And this is the really key part. In the long run you want to go
+for a roughly linear uh time complexity. And so you want to keep the number of steps as you move the window. You want
+to keep that constant. So your first move is going to be to remove the trailing element from the collection.
+Right? In other words, the thing that is leaving the window, you need to remove it from your collection. Whether that's
+your product or your sum or some other data structure like we'll see later on.
+In addition to that, because you're moving your window to the right, that means some leading element needs to be added to the collection.
+Generally, these remove and add operations should be opposites, right? So in the case of calculating a total
+sum your remove is going to be subtraction and your add is going to be addition. In the case of taking some
+large product your remove is going to be division and your add's going to be multiplication.
+And do try to visualize things over here. Right? So when I have the window like we've been exploring in the last
+few problems your trailing element is really the last thing that's about to leave your window and then your leading
+element is about to enter your window. So of course I'm going to slide this orange window to the right.
+So now that you've established your new window, you just do the business logic and that really depends on the context
+of the problem. So thus far we've done things like taking the max. Obviously this wouldn't change much if you took
+the minimum. And of course I'm going to show you a lot more variations as we move through the course. But the great
+thing is with this sliding window of fixed size strategy. This is my general recipe and it works pretty great. After
+you do the business logic, you need to go back to step number two. Keep moving your window to the right. And you just
+do steps two and three again and again until you've processed your entire array.
+All right, so that's our little summary of the sliding window with fixedsized K strategy. Well, go ahead and practice
+some more problems right now. And of course, we're going to increase the difficulty. That way, you're ready for your interviews.

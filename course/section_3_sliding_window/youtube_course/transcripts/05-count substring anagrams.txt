@@ -1,0 +1,128 @@
+
+
+# count substring anagrams
+Hey programmers, Alvin here. Right now I want to go over the approach we can use for this count substring anagrams
+Count Substring Anagrams
+problem. So in this problem we're going to be given a string as some input. We're also going to be given another
+string representing an anagram. What I want to do is count the number of times that the anagram appears inside of the
+string. Of course, like always, an anagram is a string where we can rearrange the order of the characters.
+So, if I wanted to actually step through this particular example, my anagram is at and I can actually find that exactly
+in the string. So, that gives me a count of one. I can also find occurrences where the anagram is rearranged, right?
+So, here I have TTA. Finally, at the end, I have TAT. That would give me a total count of three
+substrings that match with the given anagram. So you just want to return the number three here. So this problem seems
+pretty typical of what we've been studying lately, especially when compared to the previous problem. There is something important we do want to
+note in this particular input though. Uh we are allowed to have duplicate characters in the input. And this
+contrasts with the previous problem where we were guaranteed only unique characters. It's pretty plain to see in
+my input string here. A appears multiple times and even the T appears multiple times. And so let's say we maybe started
+to attack this similar to our last problem using a set. So we know in the long run we're going to use, you know, a
+sliding window strategy. And if you had your initial window here, you would convert the characters into members of a
+set. So the corresponding set for your window would look like this. Just like our last problem, nothing fancy. But
+then if you actually move this window to the right one unit, you would end up with this. And you can immediately spot
+the issue here. My window has a size of three and it contains at. If I look at
+the corresponding set I would have created here, it only contains a single A and a single T. That's really just a
+constraint of sets, right? In a set, the elements of a set are necessarily unique. You can't have duplicate
+elements in a set. And so this lack of correspondence is going to cause an issue for us, right? My set only
+contains two characters, but the window I'm looking at has three characters. And so that's why you won't be able to use a
+set for this one. You do need to adjust this logic a little bit. What you can do to solve this one is just modify the
+logic and use a map. Like you already know, sets and maps are both hash data structures. So they give us a constant
+time lookup and access. However, a map gives you a key value pairing. And so
+what will your key and your value be in this particular problem? Well, your key is just going to correspond to a
+character of your window. and the corresponding value is just going to be the count of that character. Because a
+character can be duplicate and appear multiple times in our window, we're going to use a count to represent that
+information. So let's step through our sliding window algorithm, but this time using the map here. So we're going to
+start at the very beginning. And for the most part, this is going to feel like a pretty classic sliding window of a fixed
+size algorithm, just adjusting for our map logic, right? And so when I create my initial window, of course, I need to
+consume these first three characters. And all that means is I put them inside of my map here and give them the
+appropriate counts, right? So G appears once, A appears once, and T appears once. What you can also do is generate a
+similar map for your input anagram. So my input anagram has one A and two T's.
+That's going to be useful when you actually compare them during your algorithm. And because in the long run, I'm interested in the count, right? I
+want to find a number of substrings that matches the anagram. I'm going to initialize some count to zero. If I
+double check the initial window I have right now, it doesn't match the anagram. So, I don't count it. That's why my
+count begins at zero. And now I can enter the general algorithm. So, I'm going to have my trailing element here,
+which is the G. I also have my leading element, which is the next T over here. Like you expect, you want to just remove
+your trailing element. So I've removed the G from my map which means I reduce its count to zero. At the same time I
+need to add my leading element in. So I need to add an additional T. So the count of T is now two. So now the map
+actually represents the next window over here. At this point I just want to note something important that might factor
+into the code that you write for this. So I just decremented the G from a one down to a zero. That essentially means
+that if G is zero that there are no G's in my current window, right? So I can
+really ignore the G completely. Maybe you can remove it from your window map.
+And if you did that, then you would have a perfect equality between your window map as well as the map of your anagram.
+So what I'm saying is you could compare the window map to the anagram map and you see that they're equal. And so you
+could increment your count by one. Cool. So let's continue the algorithm. I need to remove my trailing character of A and
+also add in my leading character of A, which has an effect of not actually changing the map, but it does bring me
+to that next window. Now that I'm at the next window, I should compare my two maps, and they're equal, so I increment
+my count to two. This point, I slide my window again, being sure to update the map appropriately. Here, I don't have a
+match between the two maps, so I just continue. Still no match. Still no
+match. And finally over here I do have a match that brings my total count to
+three. And that's all there is to it. This feels very similar to our previous sliding window of fixed size algorithms
+just adjusting it with this count hashmap logic. So if we say that n is the length of our string and k is the
+length of our anagram. Let's talk about the complexity of this one. Similar to last problem, the complexity for the
+time is going to be n * k. The N comes from the fact that we have to slide this window all the way through our input
+string. So that's where the N comes into play. Where does the K come from? Well, the K comes from the fact that you have
+to actually compare your two maps. You know that the map in the worst case is
+going to have the same size as the window, right? So on every iteration or every time you slide the window, you
+also need to compare the contents of your map. The sliding part is the N and the comparison of the maps is the K. So
+that's why your total time complexity is n * k. In a similar way, the space complexity is just k coming from the
+space consumed by the map you create. In the worst case, if you had all unique characters uh in your window, you would
+have k different keys in that map. All right, programmers, what I want you to do is give this code a shot on your own.
+There is some tricky logic you might need to account for when it comes to handling the map. So if you get stuck, you can find me in the walkthrough
+video. Hey programmers, Alvin here. Right now I want to go over the Python walkthrough for this count substring
+anagrams problem. So to solve this one we do want to use a bit of a counter hash. And to do that really easily in
+Python you could just use the built-in collections counter. Right? So I'll go ahead and do is just from collections
+import counter. And what I want to do is I'm going to convert just the anagram
+into a counter of its characters. So that's really straightforward. I'll call this my maybe just anagram counter. I'll
+just pass in the entire anagram. And beyond that, what I want to do is establish the counter that's going to
+contain my window. And I'm going to initialize here. I'm going to say my window counter.
+And do bear in mind that these uh counter objects, they're going to represent the character counts of those given strings. Right? Just like we saw
+in the approach. When I create my initial window, I do want to create counter, but I just want to grab uh the
+first window from my input string s. So, I'm going to do a little slice here. I'm going to say s and start at the
+beginning, go up to the length of the anagram. So, here the size of the window or the k is really just the size of the
+anagram, right? And so, this will give me just the first we'll say k characters
+of the string and I'll put that into my counter. Great. Now from here I can actually initialize the count that I'm
+eventually going to return. So I'll call it my we'll say num matches
+and it could either be initialized as a one or a zero depending on what my initial window looks like. But I know at
+the very end I'm going to just return the num matches. And so like we always
+say for our sliding window of a fixed size algorithm you have to watch out and be sure to check your initial window. So
+I'm going to assign num matches as one if the anagram counter is the same as
+the window counter. Right? Otherwise it's not the same. So I'll initialize it
+to zero. Right? I'm just checking if the window has the same count as my anagram.
+Right? In Python the counter object is really useful uh because you can just check for equality using double equals.
+All right. From here I enter my general algorithm. So I need to slide my window. So I'm going to say for say I in range
+and I want to go from the beginning of the string. So just zero and then up to
+length of s minus the length of anagram. You want to slide all the way to the right as far as you can. What I want to
+do is remove my trailing character. So if you wanted to, you can split this up into some variables. Maybe you can say
+trailing char is going to be your s at index i. And then like you expect your
+leading char is going to be s at index i
+plus the length of the anagram. Right? Cool. So you have your trailing char and
+your leading char. When it comes to your trailing character, what you want to do is just remove it from your count. So I
+can say my window counter access a trailing char. It just decrements it. And in the same vein, you also want to
+uh increment your leading character. Cool. Now that you've slid your window
+to the right, you just want to perform your check here. Check if your newly adjusted window is actually a match with
+your anagram. And if it is, then you can just increment num matches.
+Just some basic counting logic here. All right, let's go ahead and give this a test run. Because we're in Python, we
+really get to benefit from the built-in counter collection and it's really easy to solve this. Uh do notice how similar
+this code is compared to our previous, you know, sliding window algorithms, right? We still had this concept of
+initializing our very first window. We have to manually check it. Be sure to do
+that. So, you know, if we have an initial match, we initialize our count to one, otherwise it's zero. Then from
+there we just slide our window to the right using like the general part of the algorithm like you expect. Uh whenever
+we move to the right we remove our trailing element from the collection and we add in our leading element. And then
+because this is a counting problem I just want to go ahead and verify uh do I actually have a match for my window to
+the anagram? If we do we just increment our global count here. Like we said in the approach video this code has an n *
+k complexity. Right? So if I kind of break things down here, when we convert the anagram, which is of size K, right?
+When we convert our anagram into a counter, of course, we have to iterate through it under the hood. So that's really K steps. Uh similar when we also
+convert just the first few characters or the first K characters of our string into a counter. That would also be doing
+K iterations, right? And then doing this check over here, right? This is a really important aspect. Although we're doing
+like a quality and it looks like a simple operation, we are comparing two counter objects, right? In Python, it
+will literally check, you know, every key of the counter if its corresponding frequency matches the other counter,
+right? And so in the worst case, I would have k different keys in each of these counters. So this simple equality check,
+it's actually not so simple. It does take K steps. And I know it's going to be K because the biggest the window
+counter is going to get is K. And I also know that the anagram counter is exactly K. Right? So I have a bunch of K's at
+the start. When it comes to this for loop here, here we're really iterating roughly through the length of our string
+s. Right? So that's really starting to give us an n. Now if we look at the operations inside
+of uh this for loop, this is constant time. This is constant time. All these operations are constant time except for
+this over here. Just like it was before, because I'm checking for a a quality between my counter objects under the
+hood, this has to go through each key and verify that the frequency is the same. And like we already said, that was
+kstep. So this nested operation is K. And just to be clear, I'm going to put it over here. So it's really NK for this
+entire for loop. And so looking at our kind of overall complexity here, we have a K plus a K plus a K plus an NK.
+Obviously NK is much bigger than any of these other K. So that's why the overall complexity here is N * K and that was
+the time complexity. When it comes to the space complexity, we're just looking at O of K from all of these counters.

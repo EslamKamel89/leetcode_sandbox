@@ -1,0 +1,129 @@
+
+# find subarray sum 
+Hey programmers, Alvin here. Right now I want to go over the approach we can use for the find subarray sum problem. So in
+Find Subarray Sum
+this problem, we're going to be given an array of numbers as input as well as some target sum. What I want to do is
+find a subarray that sums to the given target. And so for this particular input, the answer would come from this
+subarray over here where I have the 2, 1, and the 7 because 2 + 1 + 7 is 10.
+And in the long run, you actually want to return the start and end indices of that subarray. So what I'm saying is if
+you actually label all the indices of this array, of course, your indices start at zero, the starting index is
+four, and the ending index is six. And notice that here those indicy bounds for
+the start and end are inclusive. So just bear that in mind. So what this problem
+is asking is pretty straightforward. But how can we go about solving it? So lately I've been showing you the sliding
+window algorithm. And we know that generally the sliding window algorithm is really great at considering a
+subarrays or substrings. And so far in the course we've always been dealing with a sliding window of a fixed size.
+But you actually won't be able to use that exact algorithm here because you really need to find a variable size.
+Meaning you won't know exactly how big the subarray is. That's going to be the final answer. Right? In this particular
+input, it happened to be a subarray of three elements. But there is no constraint here. Right? It could have been two elements. It could have been
+one element. It could have been five elements. And so you need to consider windows of variable size. Don't worry
+though, we'll be able to use a lot of the logic from our previous renditions of sliding window. We just have to adjust for some different things here.
+And so for the sliding window with a variable size, you want to start the algorithm in a similar way where you
+deal with some indices, right? And so I'm going to have in red my starting index and in green I'm going to have my
+ending index. And at the beginning you have them point at the very first index. And so just so we don't forget it, my
+start is red and my end is green. And because overall you want to consider the
+sum of a subarray, you're going to have a sum variable. The sum variable is going to represent the total sum of the
+current window that you're looking at. And so how does this algorithm run? Well, what you want to do is look at
+your ending pointer and just add that element into your sum. So I'm going to add the three into my sum. That means my
+total sum is three. And so you're looking at this window here, right? Notice that my star and end are pointing
+to the same single element. So that would just be the subarray with one element inside. That element is just
+three. And at this point, you could also, you know, check your sum. So, I'm going to check, is my current sum of
+three equal to my target? It's not. So, what I can do is just increase the size of my window. So, I'm going to slide the
+end pointer to the right by just one position. So, now I'm looking over here.
+Of course, at this point, you should also add that one into your sum. So, I do 1 plus my current sum of three. That
+gives me four. And again, you should continue to check. I'm going to check if my current sum of four is equal to my
+target of 10. It's not. So I can keep increasing here. So now I'm considering
+this element. So I add that four into my current sum. My current sum is eight. I compare it to the target. 8 is not equal
+to 10. So I keep going. At this point, I add a nine into my sum. That gives me 17. I check 17 is surely
+not equal to my target. So I need to keep going. However, there's an important thing to consider here. Now
+that my sum is 17, when I compare that to my target sum of 10, I'd really
+overshot it. A really important constraint they give us in this problem is that they tell us that the input
+array contains non- negative elements. Because there are no negative elements in the array, if I'm to continue to
+increase the size of my window, that would only make my sum larger and larger. So it's 17 now. It's only going
+to get bigger than 17. Right? If I look at my next element, I would have to add a two into my sum. and I'm just getting
+further and further away from the target because I've already overshot it. So, here's where we work in the interesting
+logic. So far, we've only been incrementing the position of our ending pointer, but now it's time to actually
+increment the position of our starting pointer. So, I want to pay attention to the red pointer now. And I want to
+actually move this one to the right. It acts as my trailing element. So, when I move this pointer to the right, that
+would be effectively removing the three out of the sum. I subtracted the three from the 17. That's why my current sum
+is 14. And I want to do a check here. I'm going to compare my current sum of 14. And I see that it's still larger
+than my sum of 10. So I could move this start pointer even one more precision, shrinking the size of my window. Of
+course, I remove the element out of it. So now my sum is 13. 13 is still bigger than my target sum of 10. So I should
+still shrink my window by progressing just the starting pointer. Because my current sum of 9 is less than my target
+sum. It's okay to actually increase the size of the window. And when you increase the size of the window, you just increment your ending pointer. So
+you take the two. That means that your current sum is now 11. 11 is too big, right? 11 is bigger than your target of
+10. So you need to shrink your window again. Now I'm just looking at the a window of just a single element two. Two
+is less than my target sum. So I grow my window. I now have three. Three is less
+than my target sum. So I grow my window. And at this point, I've actually found the target, right? My current sum is 10
+and my target sum is also 10. At this point, you just want to return the indices of the subarray that you're
+looking at. In this case, it would be the four and six. So, there are two key steps here. Whenever your current sum is
+less than the target, you need to increase the size of your window by incrementing your ending pointer.
+However, if your sum is too big, if your sum is bigger than the target, you need to decrease the size of the window by
+incrementing the starting pointer. If you do it this way, you'll eventually be able to find the right target sum. And
+along the way, you're considering all of your windows of variable size. The way
+we implement this is pretty interesting. So, I'll save that detail in the code walk through. That being said, let's
+talk about the complexity here. If we say that n is the length of the array, the time complexity here is just O of N.
+And I think that might be a little surprising. A common mistake I see students make when they look at the drawing for this algorithm is they have
+a feeling that it's going to be an N squared algorithm. I think that's like a reasonable assumption to make,
+especially because we have, you know, two pointers and it looks like that they loop uh through the same array. But
+let's actually go through what an N squ. So looking back at my diagram here, I'm
+going to step through what to me is classic N squared behavior. I'll call it my N squaredish behavior. And so I'm
+going to start both of my pointers just at the beginning. And if I had a very typical like N squared nested loops, it
+would look like this.
+What you'll notice is a very key characteristic of n squaredish behavior is that once you one of your pointers
+gets to the end of the array, it has to get reset like so and it keeps progressing. So that's what very classic
+n squaredish behavior looks like. And you get it commonly from your nested loops. However, we don't have that same
+pattern here. So I'm going to reset my drawing. And just looking at the pointers, I'm going to show you exactly
+how our pointers were updated. It looked like this.
+And at this point in the trace, we would have actually found the correct answer cuz we have our sum of 10. But let's say
+that we didn't find the answer and we had a lot more elements in the input array. If I had to keep searching, they
+might behave something like this.
+What you notice is compared to my n squ example, both of these pointers here don't actually ever get reset. They both
+generally just make progress by sliding to the right. So we actually don't have n ^ 2 here. What you really have is 2 *
+n. The two comes from the fact that we have two pointers. The n comes from the fact that each pointer needs to make its
+way in the worst case through the entire length of the array. And like you already know, when I have 2n in my big O
+complexity, I can just drop the constant factor of 2, giving me O of N. That's why your time complexity here is just O
+of N. Very clever stuff. And the space complexity is constant because you already know why. All right, so that's
+the approach we can use for this one. I think you should go ahead and just start watching the walkthrough video for this.
+It's going to be our first time implementing the sliding window with a variable size algorithm. It's somewhat
+similar to the fixed size algorithm, but it has some major differences. The logic gets pretty tricky, so you'll want to
+see me in the walkthrough video. Hey programmers, Alvin here. Right now, I want to go over the Python walkthrough
+for this fine subarray sum problem. Like we said in the approach video, we want to solve this one using our sliding
+window algorithm, but this time we're going to implement it using a variable size window. So, I'm going to need to
+set up a few variables. I'm going to first set up some index I can use to represent the start of my window. Just
+call it start, initialize it to zero. And I also need a way to track the sum of my window. So I'll call it my window
+sum. Also initialize it to zero. From here, what I want to do is set up a for loop that iterates through my ending
+index. So I'm going to say for end in range. So it's going to start at the very beginning and just go through the
+length of your list here. So now that I have the ending index of my current window, what I want to do is start
+accumulating the sum by using the elements at this end index. So what I'm
+saying is I could do window sum plus equals just add the element of your list from this ending index. This would be
+analogous to adding in the leading element into your window. Right? Great.
+But like we said in the approach video, the interesting part about this algorithm is I do need to make my window smaller sometimes, right? Based on the
+criteria of the problem, right? I want to find a subarray that matches the given target sum. And if ever I have a
+window sum that's too big, then I know I need to decrease my window size, right? It could remove some elements out of my
+window. So what that would look like is like this. I could say while my window sum, well, it's too big. So if it's
+bigger than my target sum, then I'm too large. So I should make it smaller. To make it smaller, you want to remove
+elements out of your window. And like all of our previous sliding window problems, when you remove something out
+of your window, generally you want to remove your trailing element. So that would be the element at the start index.
+So what I'll do is I can say window sum minus equals nums at the starting index.
+So now that you removed that trailing element from your window, you do want to
+also increase that starting index. Start plus equals 1. This has the effect of
+making my window smaller. And do note that I have uh this code in a while
+loop. So it's going to run as many times as needed. So, however long the window sum is bigger than the target sum, I'm
+going to keep removing elements out of my window at the front. So, that means that when this y loop is done, that
+means that my window sum is no longer greater than the target sum. It might actually be equal to the target sum. So,
+I'm going to check if my window sum is equal to the target. And if that's the case, and I just found the answer right
+here, they tell us to return the start and end indices of the window that has the given target sum. So for you in
+Python, just return a tupil of the start and end. So if my window sum equals a
+target, then I go ahead and return the final answer. If not, then I just go to another iteration of this for loop and
+just progress my ending index, which would mean that I add an additional
+element into my window, perform the same operation again and again. Great. Let's go ahead and test this out.
+And there we have it. I will say that although this code is really short, I think it's a little tricky in its
+design, right? I do want you to really understand how uh this code corresponds
+to the drawing we made during the approach video, right? So, in particular, how this while loop works,
+right? It just removes uh elements out of my window sum if ever my window sum
+is too large, right? That gives me the effect of being able to have a window of variable size because I decrease my size
+when it gets too big. And like we also said in the approach video, this code is going to have an O of N runtime where N
+is the length of the nums list. Right? Although there are two loops here, you do not have a N squared uh runtime. And
+we did a big explanation of that in the approach video, so go back to it if you need. When it comes to the space complexity, it's pretty plain to see
+here that we only have a constant amount of space just coming from a few variables that we use. All right,
+programmers, that's all I got for this one. Coming up next, we're going to practice a lot more of the sliding window of a variable size algorithms.

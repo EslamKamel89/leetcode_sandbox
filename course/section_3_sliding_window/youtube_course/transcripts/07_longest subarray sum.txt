@@ -1,0 +1,140 @@
+
+# Longest Subarray Sum
+
+Hey programmers, Alvin here. Right now, I want to go over the approach we can use for this longest subarray sum problem. So, in this problem, it's going
+to be just a variation of the last one. So, we're given an array of some numbers, and in the problem, they do tell us that the elements of the array
+are going to be non- negative. We're also given a target sum. What we want to do here is return the length of the
+longest subarray that sums to the given target. For this particular input, the answer we should return is four. And
+that comes from this subarray. Notice that the elements in the subarray do indeed sum up to my target sum of 10.
+And it happens to be the longest subarray possible that adds up to 10. Bearing in mind that we want to return
+the length of that subarray. All right, so that's what the problem is asking. How can we go about solving this one?
+Well, we're going to use our sliding window algorithm. We know sliding window is a good fit here because we need to
+consider a possible subarrays. And because we don't know the size of the potential subarray, you want to do the
+sliding window with a variable size, right? And so let's go over how this works. Again, it's going to be very
+similar to our last problem. Just giving us another opportunity to practice. So I'm going to do is I'm going to track a
+key variable. I'm going to track the sum of the elements in my current window. We also need to set up some pointers. I'm
+going to have in red the starting index of my window and in green I'm going to have the ending index of my window. So
+the way this algorithm works is I want to add my ending element. So the element being pointed to by the green arrow I
+want to add that into my sum. So I'm going to add this four into my initial sum giving me a current sum of four. And
+I'm considering this very initial window right just containing the element four. And of course, because you want to look
+for your target sum here, you would check if your current sum of four is equal to your target sum. It's not. So
+you can keep running this algorithm, right? So I just want to increment my ending pointer, adding another element
+into my window. Now my sum is seven. It's still too small. So I'm going to take another element. Now I take the
+three. Notice that right now my sum is right on the money, right? My sum of 10 is equal to the target sum of 10. And
+because in the long run I want to find the largest window that matches up to 10. What I want to do is just save this
+in some longest variable. So so far the longest subarray that sums up to the target that would be a length of three.
+Notice that I'm going to be saving at longest the length of the subarray. And I can easily figure out how many
+elements are in my window uh by just looking at my pointers. Right? There are three elements in my window because my
+start and end pointers are inclusive. Great. At this point I keep running my algorithm. And what you should do is
+actually still increment your green pointer. So you're going to grow the size of the window. And when you do
+this, you'll see that it's the case that actually my sum is too large now, right? I know that I'm looking for a target sum
+of 10, but I went over to 12, right? Because they tell us in the problem that our array only contains non- negative
+elements. If I were to increase my window more and more, I would just get farther away from the target sum because
+I would get larger and larger potentially. So, at this point, I'm too large. So, I should decrease my window
+size. To decrease your window size, you just want to increment your red pointer or your starting pointer. And when you
+do that, you would remove that element of four from your sum. Great. Now, it's the case that my uh current sum is okay,
+right? It's now below 10. So, I can keep incrementing it if I need. Whenever your window sum is less than your target, you
+can just increase the size of your window. Taking a new element. It's still the case that I'm below the target sum.
+So, I'm going to grow the size of my window. But at this point, I go over to 14, right? So, now I'm too large. So,
+now I need to decrease the size of my window. I'm down to 11, but it's still the case that I'm still over the target
+sum. So, I decrease again. That brings me to a window sum of eight. At this
+point, I'm good to go, but I still need to find my target sum of 10. So, I keep increasing the size of my window by
+progressing that ending pointer. At this point, I'm right on the money.
+My current window sum is 10. My target is also 10. And if I actually look at the number of elements in my window, I
+have four elements in my window. That's actually more elements than the current longest I have stored. So now four is my
+new longest. And I continue my algorithm. I still want to increment my ending pointer, growing the size of my
+window. This brings me up to 13, which of course is too large. So now I decrease the size of my window.
+I'm still too large, so I do it again. So here I hit my target sum, but if I look at the number of elements in my
+window, I currently have a window size of three, but the longest I've seen is four. So I don't do any replacing here,
+right? Cuz this three is smaller than that four over there. So I keep running. So I increase my window size, but now
+I'm too large at 15. So I need to decrease it. Here I'm at 10. And again, it's another
+case where I have three elements in my window, but my longest is four. So I just continue on. I don't do any replacing here. If I take my next
+element, I go all the way up to 20, which of course is too large. So I decrement my window size by progressing
+that starting pointer. And I need to do that a few times until I get down below my threshold. At this point, I actually
+hit my target sum of 10. But of course, my window size is only one, and it doesn't get to replace the four. So I
+continue my algorithm. I grow my window, bring me up to 11. So now I need to make my window smaller. If I try to continue
+the algorithm further, I actually hit the end of my input array. So I know that I've exhausted all possible
+subarrays to look at. And so I can just return what I have stored in longest, which is the final answer of four. So
+that's all there is to this algorithm. Very similar to our previous problem. If you see that n is the length of the
+array, the time complexity here is just O of N. In the previous problem, we did a long trace through for why the
+complexity is O of N and not something like an N squ. The short story is that in this problem, we need to actually
+progress of both pointers all the way through the array. So, it's going to take n steps to move the red starting
+pointer through the array, and it's going to take another n steps to move the green ending pointer through the array. So, that's 2 n iterations
+overall, which just simplifies to O of N. The space complexity here remains
+constant because we're just using a handful of variables for our window sum as well as the longest length we've seen
+thus far. All right, programmers, I want you to try to code this one up on your own. You're going to see that the code is almost identical to our previous
+problem, just with a little spin. That way, you get to practice this concept. If you get stuck, you can find me in the
+walkthrough video. Hey programmers, Alvin here. Right now, let's go over the Python walkthrough for this longest subarray sum problem. So, this is going
+to be just a spin-off of our last problem, and we're going to use that sliding window with a variable size algorithm. So, we're going to begin with
+our starting index at zero. I do need to track the longest window over time. So, I'm going to uh set my longest equal to
+zero. I also need to track the sum of my current window. So I'll set my window sum
+equal to zero. From here I want to iterate through my end of my window. So I say for end in range from zero go up
+to the length of the numps. And what you want to do is uh take the
+elements at these ending indices and add them into your window. So that'll be my window sum plus equals nums at end.
+Great. From here, what you want to do is you do need to correct your sum if it
+gets too large. In other words, if my window sum is too big, if it's bigger than the target, then I know I need to
+bring it back down by reducing the size of my window. So, you can do that by progressing the starting index. But be
+sure to also remove the corresponding element out. So, I can say window sum minus equals nums
+at start. Great. Now, from here, you just want to go do your max value logic. So, I'm
+going to set the longest equal do the maximum between the length of my current window. The length of your current
+window would just be end minus start plus one. And also compare that against
+what you currently have in longest. Great. Now, after your for loop is done running, just return the longest. This
+code has a very similar shape to our last problem. You might be wondering about this trick here. So this just
+gives us the length of the current window. And we've seen this arithmetic before, but I'll review it over here.
+Let's say we had just some abstract elements here. E F. And I'll label their
+indices. So 0 1 2 3 four and five. And
+let's say I just had um some particular values for my end and start. Let's say my end is maybe the E element. And then
+my start, we'll say my start is the B elements here.
+Great. So I want this quantity to be the number of elements in the window. Do bear in mind that my start and end
+indices are inclusive. Right? So if I do end minus start, I'll do four minus one.
+That gives me three. Then I do this additional plus one and that gives me four because there are four elements in
+this window. One thing I am forgetting here is be sure to actually check if your window sum reaches your target sum
+before you actually do the max value logic. So you want to write if statement here. You want to check if your window sum is equal to the target sum then you
+can do this stuff. Great. Let's give it a test run. There is another bug we need to fix, but we can fix it together. So
+here we're passing the first test case, but we're failing the second one. Second one is a pretty obvious edge case. Um
+here this is a circumstance where the target sum it's actually not found within the input list here right there
+is no uh subarray that sums up to five in that circumstance they want us to return negative one looks like my code
+returns zero right and that has to do with the default value I chose for the longest right and so what I want to do
+is actually initialize this longest to be negative one because if I never find a window that matches my target sum then
+you're just going to return the longest longest variable which should still contain negative one. So let's give that a test run.
+Great. And there we have it. So like we said in the approach video, the time complexity for this is just O of N
+because we're moving the start index all the way through the list once and we're also moving our ending index all the way
+through the list once. Right? So although we have nested loops here, we don't have N squ. And we kind of talked about why that was in the previous
+problems. Space complexity here just remains constant because we're only dealing with a handful of variables. All
+right, programmers. I hope you're starting to get the hang of the sliding window with a variable size algorithm. Of course, we'll do some variations
+coming up next. Hey, programmers. Now that we've done a few sliding window with variable size problems, I want to
+go over the recipe for this one. As always, sliding window algorithms are a good choice whenever you need to
+consider subarrays or substrings. If your subarrays or substrings have any size, then you want to use the variable
+size version as opposed to the fixed size, of course. So let's go over the general steps for this. So for the most
+part, you typically want to begin by initializing your start pointer to the very beginning of your string or array.
+So that would be to index zero. And then from there, you also want to initialize another key variable. You want to
+represent the window collection. And this might vary from problem to problem. So as of late, our collection has just
+been a sum that we add into. But of course, your collection can really be anything, right? We've seen for our
+signing window with fixed size algorithms. Sometimes our collection might be a set or it might be a hashmap.
+So this really depends on the context of the problem. But typically you're going to have some collection that represents
+the aggregate of the window. From there we iterate the end pointer through the
+array or the string. And typically we accomplish this with a for loop. There are a few different steps that happen
+within this for loop. One thing you'll always want to do is make sure you add the leading element to the collection.
+Right? So you want to add the element at the end pointer into the collection. What you also want to do is have a way
+to remove trailing elements from the collection. And this is a really important step. And what you'll want to
+notice is when you remove trailing elements from the collection, you might have to do that multiple times because you want to continually remove trailing
+elements again and again while your constraint is violated. And as you remove elements, hopefully eventually
+your constraint is met once again and you're no longer in violation. So in the context of our previous problems with
+our sum, whenever our sum got too large, right? Then we started to remove trailing elements from our sum to get
+back down within that target sum. And like I have highlighted here, you typically do this removing of elements
+using a while loop, right? This happens many times until your constraint is met once again. So these two steps of A and
+B give us our variable size window because step A of adding the leading element into the collection that would
+increase the size of our window. Whereas step B of removing a trailing element from the collection that would decrease
+the size of our window. So we're able to grow our window or reduce our window as needed. And finally the fourth step is
+to just do the business logic that's specific to the problem you're trying to solve. And this could be a few different
+things, right? You might want to count something. You might want to determine the max or min of something or just find
+if something exists. It really depends on the specifics of the problem. And of course, I'm going to show you a few
+different variations of that coming up next. Before we hop into some more problems, I
+just really want to emphasize the importance of step B. To me, this is what really makes the sliding window
+with a variable size algorithm, it makes it special, right? It's how we remove trailing elements from the collection
+while our constraint is violated. The important part of these algorithms is really determining when we violate
+our constraint and how we can actually undo things to get back within that constraint.
+All right, so that wraps up my recipe for the sliding window with variable size. Do bear in mind and that this is
+just a broad guideline, right? You might not exactly be able to implement these steps to a t to solve every sliding
+window with variable size. Sometimes you'll have to adjust things, but as we do more problems together, I think
+you'll get a good sense of that. All right, let's get to it. 

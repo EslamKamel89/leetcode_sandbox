@@ -1,0 +1,112 @@
+
+
+# longest unique substring
+Hey programmers, Alvin here. Right now, Longest Unique Substring
+let's go over the approach we can use for this longest unique substring problem. So in this problem, we're going to be given just a string as some input.
+And what we want to do is return the length of the longest substring that contains only unique characters. So here
+the result we should return is four. And that comes from this corresponding substring. This is the longest substring
+with no duplicated characters. To solve this one, what you want to do is use your sliding window algorithm. Because
+we want to consider different substrings, and we also don't know how long the substrings need to be, we're
+going to use a sliding window with a variable size, of course. And so, like you always expect, we're going to set up
+our pointers. In red, I'm going to have my starting index for my window. And in green, I'm going to have my ending index
+for the window. And because I want to ultimately return the length of the longest substring, I'm going to have a
+variable to track the longest. You could just initialize it to zero, right? because you haven't found any substring
+yet. In order to track what characters you've seen thus far, I think it's great if you represent the characters that are
+currently in your window using some sort of counter hashmap. In other words, over time, the keys of this hashmap are going
+to be characters. The corresponding values are going to be the count of those characters within my window,
+similar to some previous problems. So to start this algorithm, what I do is I take the current element at my ending
+pointer and I add it into my counter data or my window data. So I'd be looking at this initial window. So I
+take the a and just add it into my counter. So that means a is a key and now its count is one. At this point to
+be complete, we should actually do our kind of like max value logic. Trivially a is indeed a substring that contains
+only unique characters and its length is one. So one could actually replace this longest of zero. So to continue the
+algorithm, I go ahead and increase my window size. So now I take the B. If I look at my window data, it's still the
+case that my window contains only unique characters. I know they're only unique characters because all of the counts are
+one. Because I have a current window size of two, I actually replace that into my longest. And I keep running.
+Increase my window size again by progressing the ending pointer. And it's still the case that I have
+unique characters here. Of course, my window size is three. So that becomes my new longest thus far. On the next
+iteration, I still try to increase my window size, taking a new element. Uh but at this point, I see that I no
+longer have unique elements within my window because a hit a counts of two. If
+any of your character counts are more than one, then you definitely have a duplicate character inside. And like we
+expect, now that we violated our window constraint, what we want to do is now decrease the size of our window until
+we're back within the constraint. And so what I do is I increment my ending pointer, really making my window smaller
+and removing an element from the window. Just like that. And as soon as I do that, I actually bring my window data
+back within the constraint. Looks like everything here is indeed unique. The window size is three, and it's not
+longer than the longest, so I don't need to replace it here. At this point, I can increase my window size. But as soon as
+I do that, I violate the constraint, right? Because B has a count of two. So, what I want to do is now decrease my
+window size till I'm within constraint. Now that I'm good, I can increase my
+window size. But of course, as soon as I do that, looks like C violates my unique constraint. So, I decrease my window
+size. I'm back within constraint. Now, at this point, I increase my window size. This actually gives me a new
+character of Q. And I'm actually still within constraint because all of my character counts are less than two.
+Notice that the length of my window now is four and four is bigger than three. So I should take the four as my current
+longest. At this point, I can keep increasing my window size. But this actually violates the uniqueness of B.
+And so I decrease my window size. And this is actually a really important scenario. Uh notice that although I
+decreased my window size, I still am violating my constraint cuz I didn't actually change the count of B. What I
+did was actually remove an A out of my window data that comes from down here, right? So, when you actually go ahead
+and try to make your window smaller when you're trying to get back within the constraints of your window, it could be
+the case that you might need a few iterations to get within that constraint. And so on this next
+iteration, I do have to make my window smaller again. And this is actually where I correct things, right? I get rid
+of that B. And that's good because I'm no longer violating my uniqueness constraint. At this point, everything
+looks unique and good to go. So, I can go ahead and make my window bigger. At this point, I violate B once more. So, I
+need to make my window smaller. I get rid of the C, still violate. Get rid of the Q. Still violate. And I get rid of
+the B. Now, I'm actually back within spec. Obviously, at this point, my window is very small. Although I have a
+unique substring, it only has a size of one. So, it surely doesn't get to replace my longest. At this point, if
+you try to actually increase the size of your window, you actually finished all of your iterations. And so you can just
+return the value you have stored in longest. So your final answer is four.
+So like we expect here, if we say that n is the length of our input string, the time complexity is o of n. Similar to
+our previous sliding window of variable size algorithms, although we have to slide both of our pointers through the
+full length of the string, that really gives us a 2n, right? The first n is for me sliding the red pointer all the way
+through the string. And the second n comes from me sliding the green pointer all the way through the string. Right? We don't get an n squ here. Like we
+always say here, the space complexity is also going to be linear coming from the counter hashmap that we maintain. In the
+worst case, you might have a whole bunch of different characters within your counter hashmap. So overall, you have
+linear time and space for this one. Hey programmers, Alvin here. Right now, let's go over the Python walkthrough for
+this longest unique substring problem. So, as always, like we've doing as of late, we're going to solve this one
+using our sliding window with a variable size. And this time, we're dealing with some some strings, right? So, I want to
+mess with some character counts. So, since you're doing this in Python, you have the luxury of maybe using the
+built-in counter collection. So, I'll say from collections, import counter, and I'll initialize one
+down below. I'll call it my I don't know, window counter. And what are some
+other variables that we're going to need here? Well, typical for most of your sliding window variable size algorithms,
+you're going to need the start index. And because here I'm ultimately concerned with returning the length of
+the longest unique substring, I'm going to have a longest variable, I'll initialize that longest length to be
+zero. Of course, I'm going to replace it over time using some max value logic. So from here, I want to iterate through all
+of the end indexes. So I'll say for end in range go from zero up to the length
+of the string. Cool. And what I want to do is I'll go ahead and grab um the character at this
+index. So I can say s at end. And because I'm going to need to reference
+it a few times. This might be a little cleaner to have a variable. I'll call it my leading character. Some familiar
+naming for us. Great. The nice part of using the counter collection in Python is that you can just go ahead and start
+by incrementing your characters because if a key does not yet exist inside of
+your counter, it implicitly has a count of zero. So what I'm saying is I can take window counter of leading char and
+just increments it immediately. Right? This is safe to do. Even if the leading
+character does not exist explicitly as a key in the counter, it implicitly has a
+key. Right? it corresponding value is zero. So now I increment it if it's the first time. Great. So that gives me a
+way to add elements or characters into my window. Now I need a way to remove them. So when should you remove
+characters here? Because in the long run you want to find the longest unique substring. You want to remove characters
+while you're non-unique. Right? If ever you violated your constraint, you're going to keep removing stuff until
+you're back within that constraint. So I want to consider the character I just added and I want to make sure that it's
+unique. So I'll actually just grab this here. So if it's non-unique, so if its count
+is bigger than one, then I need to keep removing stuff, right? So I need to remove a character here. You always want
+to remove from the back of your window. So that'll be s at start. And I'm going
+to use some familiar names here. I'll call this my trailing char. And so first
+I'll decrement the count in the window counter. So window counter of trailing char minus equals 1. And because you're
+making your window smaller, be sure to increment the start, right? Start plus equals 1. Great. So this y loop is going
+to remove as many characters as I need until I'm guaranteed that my substring
+is now unique. So now that I have a unique substring, I want to do the max value logic. So we'll just set longest
+equal do the max between the current window length, which is end minus start
+plus one. and then compare that against the longest you have stored thus far. And you've seen kind of the math behind
+this a few times by now. After your for loop is done running, just return whatever you have stored in longest.
+Great. So very typical structure here, right? We have our Y loop inside of a for loop. The while loop has the job of
+bringing us back within the constraints of the problem, right? To make sure we have a unique substring here. So let's
+test it out. Great. Looks like this is passing. So a few ways you can kind of
+write this. Um I kind of wrote this for loop so it iterates through the the kind
+of index numbers directly. If you want you can do your fancy Python things. So I'll kind of leave that to you. But you
+know you could do stuff like enumerate enumerate. If you enumerate s you'll
+have access to the ending index, right? And you also have access to the element itself. In this case the leading char.
+So you kind of skip this line here. That would be functionally the same, a little more Pythonic as well if you remember to
+use the colon. Great. Still passes. Like we said in the approach video, this code has an O of N runtime like our previous
+problems, right? The only thing that's unique about it now is actually also has an O of N space complexity, right? Of
+course, coming from the counter we create. In the worst case, we're going to have a key for every character uh
+from our input string here. All right, programmers, that wraps up our course on the sliding window algorithm. We solved
+a bunch of problems together. We started out with some basic fixedsiz window problems and then explored some advanced
+variables sized ones. This course might be over, but the learning doesn't stop here. If you enjoy my teaching style and
+want to practice more slid and window problems, then you should check out my full algorithms course at strructy.net.
+There, I'll teach you everything you need to know to pass your DSA interviews. I'll leave a link in the
+video description if you're interested. That's all for now.

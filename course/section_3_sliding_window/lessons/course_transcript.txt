@@ -1,39 +1,5 @@
 
-Search in video
-Intro
-0:00
-The sliding window algorithm is a powerful technique used to optimize
-0:05
-problems involving arrays or strings by converting nested loops into a single pass. This course is designed to help
-0:12
-you master this essential pattern, providing you with the intuition needed to tackle common technical interview
-0:18
-challenges. Alvin created this course. Hey programmers, and welcome to our course on the sliding window algorithm.
-0:25
-If you're preparing for technical interviews and want to master this common topic, then you're in the right place. If we haven't met before, hey,
-0:33
-I'm Alvin. I'm an ex Google software engineer and for the last decade, I've taught thousands of engineers how to ace
-0:38
-their interviews and land their dream job. In the next 2 hours, I'll teach you everything you need to know about the
-0:44
-sliding window algorithm. That means we'll cover both the fixed size and variablesiz versions of the algorithm.
-0:51
-In this course, we'll learn by completing a series of problems. the same problems that you could see on your
-0:57
-tech interviews. Don't worry though, I've specifically chosen each problem so that it ramps up gently. We'll start
-1:04
-with the basics and then slowly increase the difficulty so that you never feel lost. By the end of the course, you'll
-1:11
-be solving some pretty advanced problems. For each problem, we'll use a two-step approach to learning. First,
-1:17
-we'll come up with a plan on the whiteboard. I think visualizing algorithms is really key to
-1:23
-understanding them. So, here's where we'll illustrate the steps of our logic and address any edge cases. From there,
-1:29
-we'll head into my editor where we'll implement the code and pass those test cases. I'll be coding in Python, but you
-1:36
-can feel free to follow along in your favorite language. All right, I'm super excited to teach you sliding window. So,
-1:42
+# Max Subarray size k
 without any further delay, let's jump into our first problem. Hey programmers, Alvin here. Right now, I want to go over
 Max Subarray Sum Size K
 1:48
@@ -508,6 +474,8 @@ sure you feel comfortable with the indexing. A lot of opportunity for off by one
 just made. And don't worry, we're going to be able to practice this concept further in the upcoming module.
 Max Subarray Product Size K
 26:16
+
+# Max subarray product size k
 Hey programmers, Alvin here. Right now, let's go over the max subarray product size K problem. This is going to be a
 26:22
 nice buildoff of our very last problem practicing the sliding window algorithm. So here we're still given an array of
@@ -734,6 +702,8 @@ All right, so that's our little summary of the sliding window with fixedsized K 
 37:54
 some more problems right now. And of course, we're going to increase the difficulty. That way, you're ready for your interviews.
 38:02
+
+# subarray target sum size k
 Hey programmers, Alvin here. Right now, I want to go over the approach we can use for the subarray target some size K
 Subarray Target Sum Size K
 38:08
@@ -865,6 +835,9 @@ clear animations and code walkthroughs that you're used to. That's strructy.net.
 44:45
 video description if you're interested. And now, let's get back into our sliding window course.
 Has Substring Anagram
+
+
+# has substring anagram 
 44:53
 Hey programmers, Alvin here. Right now, let's go over the approach we can use for this has substring anagram problem.
 44:58
@@ -1077,6 +1050,9 @@ total time complexity of n * k. Right? Space complexity here is just going to be
 create. So mainly your window set and also your anagram set. They're going to have exactly the number of characters
 55:37
 that is in the original anagram here.
+
+
+# count substring anagrams
 55:43
 Hey programmers, Alvin here. Right now I want to go over the approach we can use for this count substring anagrams
 Count Substring Anagrams
@@ -1326,6 +1302,8 @@ entire for loop. And so looking at our kind of overall complexity here, we have 
 Obviously NK is much bigger than any of these other K. So that's why the overall complexity here is N * K and that was
 1:08:35
 the time complexity. When it comes to the space complexity, we're just looking at O of K from all of these counters.
+
+# find subarray sum 
 1:08:43
 Hey programmers, Alvin here. Right now I want to go over the approach we can use for the find subarray sum problem. So in
 Find Subarray Sum
@@ -1580,6 +1558,8 @@ here that we only have a constant amount of space just coming from a few variabl
 1:21:33
 programmers, that's all I got for this one. Coming up next, we're going to practice a lot more of the sliding window of a variable size algorithms.
 Longest Subarray Sum
+
+# longest subarray sum 1:21:42
 1:21:42
 Hey programmers, Alvin here. Right now, I want to go over the approach we can use for this longest subarray sum problem. So, in this problem, it's going
 1:21:49
@@ -1853,8 +1833,11 @@ just a broad guideline, right? You might not exactly be able to implement these 
 1:35:40
 window with variable size. Sometimes you'll have to adjust things, but as we do more problems together, I think
 1:35:45
-you'll get a good sense of that. All right, let's get to it. Hey programmers, Alvin here. Right now,
-Longest Unique Substring
+you'll get a good sense of that. All right, let's get to it. 
+
+
+# longest unique substring
+Hey programmers, Alvin here. Right now, Longest Unique Substring
 1:35:52
 let's go over the approach we can use for this longest unique substring problem. So in this problem, we're going to be given just a string as some input.
 1:35:59

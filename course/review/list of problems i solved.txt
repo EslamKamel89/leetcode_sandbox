@@ -86,6 +86,8 @@ Subarray Sum Equals K
 Two Sum
 Intersection of Two Linked Lists
 Reverse Vowels
+Contains Duplicate
+Group Anagrams
 
 problem i can't solve ---------------------------------------
 Find K Closest Elements (can't solve this problem may be after i study binary search i could solve it)

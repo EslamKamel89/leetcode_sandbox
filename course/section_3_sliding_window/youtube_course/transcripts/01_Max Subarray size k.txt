@@ -1,0 +1,240 @@
+
+# Max Subarray size k
+without any further delay, let's jump into our first problem. Hey programmers, Alvin here. Right now, I want to go over
+Max Subarray Sum Size K
+the approach we can use for this max subarray size K problem. So in this problem, we're going to need to learn a
+new strategy. What is this problem asking us to do? Well, we're going to take two different inputs. We're going to take in an array of some numbers as
+well as a size K, which is just another number. Here, what we want to do is consider subarrays of size K. So because
+right now K is four, that means I look at subarrays with four elements inside. Do bear in mind that a subarray is going
+to be a continuous collection of four elements here. So here I have highlighted one possible subarray. If I
+consider the sum of these elements in the subarray, their sum is 33. What I want to do is consider all such
+subarrays with four elements. For example, this subarray at the very front has a sum of 16. This subarray somewhere
+in the middle has a total sum of 43. What I want to do is return the maximal sum I can get with any subarray of
+length four. The answer here would indeed be the 43. That's the biggest sum
+of subarrays that contain four elements. All right, so let's start discussing a strategy for this one. It's really
+important that we do notice that we don't need to consider every possible subarray of any size. What we want to do
+is only consider subarrays of this target size. Here our target is four. So what I can do is just start at the very
+beginning of the array and move this window. Right? So here I have the first four elements. After that I want to
+consider the next four elements and so on and so forth. And that of course
+gives us our classic sliding window strategy which is what we're going to explore in this upcoming module. So
+let's discuss the logic that we're going to use for the sliding window algorithm. So we're going to start our window at
+the very beginning of the array. That makes sense. And because in this problem we want to consider uh the maximum sum.
+I'm going to create a variable to track the maximum I've seen so far. This should be very familiar. You can go
+ahead and initialize this variable to something logical like negative infinity, right? because I want it to be
+replaced over time. Negative infinity is never going to win when I compare a maximum. And so now that I'm looking at
+this very first window containing my four elements, I want to just take their sum. So in other words, just add up 1 +
+4 + 1 + 10. That gives me the sum of 16. I should just compare this 16 to my
+current maximum. And of course, I should replace that negative infinity because 16 is greater than negative infinity. So
+right now the max sum I have so far is 16. At this point I could just slide my window. Now I look at the next four
+elements. Again just add up all the elements inside. 4 + 1 + 10 + 25 gives
+me a sum of 40. And I do that max value logic. I compare 40 against my maximum sum of 16. 40 is greater. So I go ahead
+and replace that as the max sum. Slide my window over to the right a little bit. And again I add up these four
+elements. If you take the sum of 1 + 10 + 25 + 3, you get 39. 39 is not bigger than my
+maximum sum so far, so I don't replace it. You should still move your window over, though. Looking at my next window,
+I do 10 + 25 + 3 + 5. That gives me a sum of 43. And of course, 43 is bigger
+than my current maximum sum of 40. So, I replace it with the 43. This algorithm would just continue for the remaining
+elements. This next sliding window has a sum of 33, which is not going to replace
+my 43. And finally, this very last window has a total sum of 34, which is
+not going to replace my 43 because I'm done looking at all possible subarrays
+of size four. I can just return this as my final answer, right? 43 is the maximum sum of any subarray containing
+exactly four elements. So, let's go ahead and start to think about the complexity of this algorithm, right? So
+I'll define my terms here. I have two inputs, right? I have my numbers array as well as my size k. So let's say n is
+the length of the array. Let's say that k is the subarray size that we're targeting. What I want to do is just
+start thinking about my possible pieces of my complexity here. So the first part would be the number of subarrays, right?
+How many subarrays am I looking at? In other words, how many windows do I have to look at here? And I'm going to tell
+you that the number of subarrays is given by roughly n minus k. So how can we reason that out over here? Well, of
+course, the subarrays is really just every little window I looked at over here. We know that we're going to slide
+this window throughout the nums array. And so think of this total number of elements. Total number of elements in
+our nums array we just said was n. Of course, you're going to be sliding this window to the right like so. And as you
+slide it, this is the farthest you can move it to the right. Right? Because of course your window that you consider
+contains K elements. That would be over here. So you really need to stop sliding
+your window once your K elements from the right edge of the array. In other words, you can't look outside of bounds
+here. Right? For example, if you had your window starting at the element zero, then your last two elements are
+going to be out of bounds. So that wouldn't be a valid subarray to consider. That's why I'm saying you need to stop sliding your window once you're
+k elements from the end of the array. So the total number of subarrays you consider is really just n minus k. All
+right. And beyond that, if that's going to be the number of subarrays we look at, how much work do we do per subarray?
+That would be the next piece of my complexity here. Well, the amount of work you do per subarray is really going to be K. And what does that really mean?
+Well, whenever we looked at some window, for example, the one I have on the screen right now, you had to add up all
+of the elements inside of it. And of course, I know there are going to be k elements inside of that little window.
+So, you need to do k work for every subarray you consider. So, how can you get the total time complexity from this?
+Well, you can just multiply these two quantities together. So, your complexity in its unsimplified form is going to be
+n minus k * k. This quantity is just the number of subarrays multiplied by the
+amount of work per subarray. Let's go ahead and simplify this time complexity. And to do that, you can just start by
+multiplying that x across your terms here. So if I multiply those things, I
+get n k minus kk. Now we can simplify this even more. Given in the problem, they tell us that
+n is greater than or equal to k. In other words, the size of the subarrays
+you're going to be looking at, it can't ever be bigger than the original array, right? Because that really wouldn't make any sense. And because we have this
+guarantee that n is greater than or equal to k, we can simplify even further. This means that n k is
+certainly bigger than kk. And so I can drop the kk from my complexity. So right
+now I'm saying that the time complexity of this algorithm so far is just O of NK. And this is a fine strategy in that
+it gives us the correct result, but it's not the optimal strategy. Really, this is just our naive sliding window time
+complexity. So I want to actually discuss an algorithm that can perform faster than this. And don't worry, we're
+still going to utilize sliding window, but we're going to manipulate things a little bit here. And so let's go ahead
+and think about the logic here a bit. So when I consider a window like this one, for example, I know I have to add up all
+of the elements inside. And that definitely contributed to my complexity, right? That's where the K comes from in
+my complexity of NK right now. So after I consider uh this subarray, when I
+slide my window to the right, the next subarray I consider is this one here. I'm going to mark it in green.
+And I'll also I have arrows pointing to the elements I need to add up for that little window, also in green. It's
+pretty clear to me that I have a lot of overlap in these two windows, right? Everything in the middle overlaps. And
+so what I want to do is avoid recomputing those into the sum, right?
+And so how can we actually redesign the algorithm here? It's going to start in a very similar way. You're going to begin with your window all the way to the
+left. That makes sense. And what you want to do over time is also track a current sum. So previously I just had a
+max sum. Now I want a current sum, right? And because you're at the very beginning of the algorithm, just go
+ahead and find the total sum of this initial window. So just do 1 + 4 + 1 +
+10. That gives you a total sum of 16. And from here, you just continue your basic max value logic. Because I don't
+have a maximum stored so far, this current sum of 16 is going to be my initial maximum. Great. And now here is
+when I would want to move my window to the right by one position. And when I move my window to the right by one
+position, I know that this trailing element over here is not going to be part of my window anymore. Right? So
+what I can do is just subtract it from my current sum. So my current sum is 16. I subtract the trailing element of one.
+That gives me a current sum of 15. And as I move my window to the right, that also means that this element over here,
+this leading element of 25, it's going to be now part of my window. So I should
+add that 25 into my current sum. 15 + 25 gives me 40. And that 40 is going to be
+the sum of that next window right here. Right? And double check your work here. 4 + 1 + 10 + 25 is indeed going to give
+us 40. Great. So at this point, I can continue my max value logic. I compare
+the 40 to the 16. Of course, the 40 is going to replace it. And I continue this algorithm. The key is I'm going to
+subtract my trailing element and add my leading element. So I subtract the four
+from my current sum gives me 36. And don't forget to add your leading element of three. 36 + 3 gives me 39. And that
+would be the sum for this next window over here. Great. Do your max value logic. 39 is not going to replace the
+40. So I continue sliding to the right. Again, I subtract the one here, but also
+add the five, giving me my next window of 43. 43 is bigger than the max right now of 40. So, I replace it. And go
+ahead and keep sliding your window to the right. Here, I need to subtract the 10 and add a zero, which means that my
+current sum is going to be 33. 33 is not bigger than 43, so it stays. Go ahead
+and slide your window one more time. I subtract 25 and add 26. That gives me a
+current sum of 34. 34 does not replace the 43. At this point, I'm done sliding
+my window all the way to the right. So, the final value of my maximum sum would be the true maximum of any subarray uh
+inside of my original array. And so, with that small change, let's go ahead and talk about the complexity of
+this new algorithm. So, the number of subarrays that we consider is really the same. It's still going to be n minus k,
+right? We still slid the window throughout the nums array, so it's still n minus k. What did change was the
+amount of work per subarray. If you think about it, what did we actually do? We only did two steps per subarray. So
+just recall whenever we considered some window, all we had to do to get to the next window to the right was subtract
+the trailing element and add the leading element into our current sum. So the
+amount of work is really just two. What we're really saying is we just have a constant amount of work no matter how
+big the window is. Right here, our window is a size of four, but imagine your window was a size of 10. You would
+still only need to subtract a single trailing element and add a single leading element. So, that's really a
+great optimization here. So, let's talk about the total complexity of this new and improved algorithm. If you want to
+go nice and slow here, you can still say uh that the time complexity is going to be the number of subarrays multiplied by
+the amount of work per subarray. Here we do n minus k * 2, but of course, you can simplify things. 2 is just a constant
+factor. So you can drop it completely. And like we said here, we know that n is greater than or equal to k. So I can
+simplify this quantity even more. It's really just going to be an O of N time complexity for this. This would be the
+perfect optimized sliding window time complexity. Naturally, if you compare this to our initial naive solution, our
+previous version was n * k, but our new and improved version is just n. If you want to talk about the space complexity
+here, when you go ahead and code this up, you're not really going to use any scaling data structures. You're just going to have a handful of variables
+that you're going to do some max value logic as well as some addition into. So your space complexity here is just going
+to be constant. All right, so now that we have a good idea about the plan we want to use, it's time to code it up. In
+the next section, I'm going to hop into my text editor where we can implement the code and run some test cases. It's
+really important that you follow along. If you head to the video description, you'll find timestamps along with links
+to the coding workspace that I'm going to be using. So feel free to code along there. Or if you're more comfortable,
+feel free to edit in your own text editor. I'll be sure to pull up test cases on the screen so you can also test
+your work. I'll be coding in Python, but in our workspace, you can feel free to switch the language to Java, C++, or
+JavaScript as well. Hey programmers, Alvin here. Right now,
+let's go over the Python walkthrough for this max subarray sum size K problem. So definitely make sure you watch the
+approach video first because we're going to learn a new strategy. What you want to do is apply the sliding window
+algorithm. And so I'll solve this in two ways. I'll solve it with my baseline sliding window algorithm and then I'm
+going to optimize it to get the most optimal uh time complexity here. And so to get going, let's go ahead and
+implement that very first version. So what I want to do is create some variables here. In the long run, what I
+want to do is return the maximal subarray sum. So, I'm going to create a max sum variable here. Like we expect,
+it's really important that we default this to a nice value. I'm going to set it equal to infinity because I know that
+anything I actually find is going to replace this value. Great. Then from here, I want to start looking at my
+window. So, I'm going to create a nice little for loop here. I'll say for i in range. And you're going to start at the
+very beginning of your nums array. And you want to go toward the end, but you have to be sure that you don't go out of
+bounds. So this gets a little tricky really to figure out exactly where your stopping condition is, you want to just
+look at an example, but I know that's going to be up to the length nums minus
+k but then also a plus one here. We'll kind of explain why that is so we avoid
+any off by one errors. So I'll bring in the first example.
+So let's just quickly check the boundary of this loop here. So it makes sense that I'm starting at index zero because
+your first window needs to start here. And notice that my k is three. So I want to grab three elements at a time. So the
+very first iteration is going to be right here. Which is great. Of course on the other end I know my very last
+iteration needs to be this over here. Right? Do bear in mind that the length
+of this nums array right now there are seven elements. So here I'm doing seven
+minus three. Right? Because k is three. 7 minus 3 gives me four, right? and then
+I do a plus one to it. So that gives me five. If I count my indices, they go 0 1
+2 3 4 and five. Do bear in mind that the range function within Python, the second
+argument is exclusive. So although I'm passing in the index of this element over here, it's going to be excluded in
+my range. So really the last iteration starts here at the eight and goes all the way through the end, giving me my
+very last window. That's why I need to do the plus one over here just to make sure that I end in the right scenario.
+Great. And so from here now I'm able to iterate through all of my windows and I'm sliding them to the right. In the
+naive solution, all you would do is take uh the sum of everything within that window. So what I can do is create a
+variable. I'll call it my current sum. And I'll use the built-in sum function
+in Python. It's really useful here. I could say sum. I could pass in just a subarray. So the subarray that I want to
+grab is going to be from nums. It's going to start at index i and go to the next k element. So I'll be i plus k over
+here. Great. And so again, we could do a little spot check if you like. Let's say I'm somewhere in the middle of this
+algorithm. Let's say that right now I is pointing to this element over here,
+right? So it has index two because I go zero, one, two. I know I want to grab
+these three elements, right? Okay. So what I'm saying is start at index 2 which is correct and go all the way up
+to but not including 2 + 3 because again my k is three. So 2+ 3 is five. So if I
+count my indices 0 1 2 3 4 5 right. And
+the second argument into this Python list slice is going to be exclusive. So I won't include this four which means I
+grab the 1, the -9 and 8. So that works out nicely here. Now that you have the
+current sum, go ahead and just do your max value logic. Right? So I'll go ahead and check if my current sum. If it's
+bigger than the maxum, then I also replace it. Right? Max sum should be equal to the current sum. Then at the
+very end, return your maxum. Do bear in mind that I'm only returning the maximum after I'm done looking at every possible
+subarray here. So I'll comment this out and I'll give it a test run. This is going to be our naive solution. does
+give you some correct results for the most part, but it will time out for some larger test cases. Great. So, let's go
+ahead and optimize this now using what we spoke about in the approach video.
+So, I'll go ahead and create my version two of this, which will be a little faster. So, I know that in this version
+two, what I want to do is have two variables. I want the current sum of my window as well as the max sum. So, I'm
+going to create that over here. Set equal to sum. I'm going to grab the very first window which would be nums
+from the very beginning all the way through the first k elements. So if k is three this would grab the sum of the
+first three elements here. Great. And so from here what I want to do is now go
+ahead and perform the general algorithm which means I need to iterate through everything else. So I'm going to say for
+i in range. So I'm starting at the very first index and go all the way through the last index you want to hit which
+would be the same in the condition from before. So I'm grabbing this. This will be my very last window. So really
+because my k is three in this particular example. I start grabbing at this
+window. My last window is going to be this one. And you just need to do the plus one here to account for that in
+Python because this argument is going to be exclusive. Cool. And so from here, here's where we
+work in that uh fixed number of steps to compute the next window. Right? So
+instead of actually calculating the sum of everything in between, I want to make sure I only do a constant number of operations here. In the approach video,
+we said that we would subtract our trailing element and add our leading element into our current sum. So I know
+I already considered my initial window right here. Right? I just manually
+grabbed the sum of the first three elements. So this particular example, my current sum would be 4 + 2 + 1, which
+would give me a 7, right? And so current sum is 7. You will want to actually
+initialize that into your max. So I'll say my max sum is going to be my current
+sum. Right? Now, it's really important for this like optimized version of our sliding window algorithm. You will have
+to treat the very first window in a special way, right? Your first window is
+handled with this code and all subsequent windows are going to be handled by this for loop here. And so in
+this for loop, what I want to do is now help compute the uh next window. So what I can do is I can take my current sum
+and I want to subtract from it the element that is leaving the window. So this is my current window. My next window is going to be this guy over
+here, which means that the four needs to leave. So I better subtract that four from my current sum.
+So here I'll say current sum minus equal nums at square bracket I right because
+again that would be the start of the window here and on the flip side you
+want to add into it the element that's entering the window. So if this is my
+current window and this is going to be my next window over here would be this -9 right that just entered my window.
+You can do that by doing I plus K here. It makes sense. you're just grabbing K elements after your current index. There
+is a lot of indexing that we do in an algorithm like this. So, feel free to pause the video and double check that the math works out for yourself here,
+right? But trust me on this one, this is going to work. And now that I'm calculating my current sum properly,
+here's where I would do the check. And now I want to check all right if this next window if the current sum is
+greater than the maxum and if it is then I just do my max value logic say your maximum equal to the current sum and
+after you do this for every remaining window just return what'sever in the maximum awesome so let's go ahead and
+test this out now so looks like I have a little error here and a pretty common one at that I'm
+going out of bounds so I do want to check things here probably have an off by one
+And if I'm getting my list index out of range, that probably either mean toward the beginning of my uh nums array or at
+the end of it. And looking at this code, when I do I plus K, that's me looking ahead in the list. So I'm probably
+looking outside of the right edge of my list here. So let's go ahead and think about like the last iteration of our
+code. And I might have to do at this plus one I have here. I probably don't need it. I know that I copied this part
+of the range from this previous code over here. But the logic is probably a little different. It's probably why it's erroring out. And so I know that this is
+the scenario where my i is pointing to the start of the very last window. Yeah. And I can already see because here if I
+do my current sum minus equal nums i, that means I'm going to be subtracting the eight, right? And then I'm going to
+try to add the next incoming element. Here I take my current position and then I add three to it, right? Because k is
+three. So if my current position is here and I add three to it, I go one, two, and three is out of bounds, right?
+Because this is really my very very final uh window, I don't actually need to look ahead anymore, right? So that's
+why this code is going out of bounds. So in this optimized version, you actually don't need the plus one here. Great. So
+let's go ahead and test it out. Now, there we have our nice solution. The
+thing I want to really call attention to is how we set up this optimized version. It really is kind of like a two-parter
+to me. First, you have to explicitly handle your initial window. Right here, I just went ahead and grabbed the
+immediate sum of the first k elements. And then the for loop is going to handle all subsequent windows. And if you do
+this in a smart way, what you should do is only a fixed number of operations to calculate the next window. In particular
+here, I just did a simple subtraction of my trailing element and also a simple addition of my leading element. Right?
+Because I only have two steps for every iteration of the for loop, I get that overall O of N runtime. Here, I actually
+ended up using some extra space just for convenience. Here, when I did the built-in sum function call, I'm actually
+passing in a copy of a subarray, which of course takes a little bit of space, but it's really easy to optimize this
+away if you really cared about getting down from like a linear space complexity or ON space complexity here down to a
+constant space complexity. I can show you that really quick. It's really nothing fancy. You just say your current sum equal to zero. And you just have to
+manually compute this, right? So you can say for i in range and start at index
+zero and go through the first k element. So just k over here. Nice. And then just
+take your current sum and add into it nums of i. So here you wouldn't be using
+any additional space. Let's test it out. To be honest, if I was on an interview, I'd probably still use the built-in sum
+function just because it's really convenient. And generally, we're okay with trading off some linear space as
+long as we get the optimal time complexity. All right, programmers, that's all I got for this one. Definitely take some time here and make
+sure you feel comfortable with the indexing. A lot of opportunity for off by one errors as you can see the one I
+just made. And don't worry, we're going to be able to practice this concept further in the upcoming module.
+Max Subarray Product Size K

@@ -90,6 +90,9 @@ Contains Duplicate
 Group Anagrams
 Valid Anagram
 Ransom Note
+Contains Duplicate
+Two Sum
+
 
 problem i can't solve ---------------------------------------
 Find K Closest Elements (can't solve this problem may be after i study binary search i could solve it)

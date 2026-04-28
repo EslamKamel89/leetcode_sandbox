@@ -1,11 +1,11 @@
 ## Phase 1 — Fixed Window (Foundation)
 
-1. Maximum Average Subarray I
-2. Permutation in String
+1. Maximum Average Subarray I <SOLVED>
+2. Permutation in String <SOLVED>
 
 ## Phase 2 — Core Variable Window (Entry)
 
-3. Longest Substring Without Repeating Characters
+3. Longest Substring Without Repeating Characters <SOLVED>
 
 ## Phase 3 — Constraint Variations (CRITICAL)
 

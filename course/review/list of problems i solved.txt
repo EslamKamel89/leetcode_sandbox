@@ -36,6 +36,9 @@ K-diff Pairs
 Reverse String (I, II)
 Intersection of Two Linked Lists
 Reverse Vowels
+Maximum Average Subarray I
+Permutation in String
+Longest Substring Without Repeating Characters
 
 
 revision on previously solved problems ---------------------------------------
@@ -92,7 +95,8 @@ Valid Anagram
 Ransom Note
 Contains Duplicate
 Two Sum
-
+Maximum Average Subarray I
+Permutation in String
 
 problem i can't solve ---------------------------------------
 Find K Closest Elements (can't solve this problem may be after i study binary search i could solve it)

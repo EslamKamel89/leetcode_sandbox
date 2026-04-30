@@ -9,9 +9,9 @@
 
 ## Phase 3 — Constraint Variations (CRITICAL)
 
-4. Longest Repeating Character Replacement
-5. Fruit Into Baskets
-6. Longest Substring with At Most K Distinct Characters
+4. Longest Repeating Character Replacement <SOLVED>
+5. Fruit Into Baskets <SOLVED>
+6. Longest Substring with At Most K Distinct Characters <SOLVED>
 7. Minimum Size Subarray Sum
 
 ## Phase 4 — Advanced Window Logic

@@ -39,6 +39,9 @@ Reverse Vowels
 Maximum Average Subarray I
 Permutation in String
 Longest Substring Without Repeating Characters
+Longest Repeating Character Replacement
+Fruit Into Baskets
+Longest Substring with At Most K Distinct Characters
 
 
 

@@ -103,6 +103,8 @@ Maximum Average Subarray I
 Permutation in String
 Longest Substring Without Repeating Characters
 Contains Duplicate
+Longest Repeating Character Replacement
+Fruit Into Baskets
 
 problem i can't solve ---------------------------------------
 Find K Closest Elements (can't solve this problem may be after i study binary search i could solve it)

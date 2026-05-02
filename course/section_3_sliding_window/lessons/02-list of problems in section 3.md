@@ -12,10 +12,10 @@
 4. Longest Repeating Character Replacement <SOLVED>
 5. Fruit Into Baskets <SOLVED>
 6. Longest Substring with At Most K Distinct Characters <SOLVED>
-7. Minimum Size Subarray Sum
+7. Minimum Size Subarray Sum <SOLVED>
 
 ## Phase 4 — Advanced Window Logic
 
-8. Minimum Window Substring
-9. Sliding Window Maximum
-10. Find All Anagrams in a String
+8. Minimum Window Substring <HARD>
+9. Sliding Window Maximum <HARD>
+10. Find All Anagrams in a String <SOLVED>

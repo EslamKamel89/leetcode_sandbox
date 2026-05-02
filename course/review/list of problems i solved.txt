@@ -105,6 +105,8 @@ Longest Substring Without Repeating Characters
 Contains Duplicate
 Longest Repeating Character Replacement
 Fruit Into Baskets
+Longest Substring with At Most K Distinct Characters
+Contains Duplicate
 
 problem i can't solve ---------------------------------------
 Find K Closest Elements (can't solve this problem may be after i study binary search i could solve it)

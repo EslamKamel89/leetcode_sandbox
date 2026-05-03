@@ -109,6 +109,8 @@ Longest Repeating Character Replacement
 Fruit Into Baskets
 Longest Substring with At Most K Distinct Characters
 Contains Duplicate
+Minimum Size Subarray Sum
+Find All Anagrams in a String
 
 
 problem i can't solve ---------------------------------------

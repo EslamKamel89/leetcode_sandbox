@@ -111,6 +111,12 @@ Longest Substring with At Most K Distinct Characters
 Contains Duplicate
 Minimum Size Subarray Sum
 Find All Anagrams in a String
+Continuous Subarray Sum
+Find the Duplicate Number
+Trapping Rain Water
+Linked List Cycle
+Linked List Cycle II
+4Sum
 
 
 problem i can't solve ---------------------------------------

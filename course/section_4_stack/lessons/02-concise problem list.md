@@ -4,7 +4,7 @@
 
 # Phase A — Basic Stack Foundations
 
-1. Valid Parentheses
+1. Valid Parentheses <SOLVED>
 2. Min Stack
 3. Baseball Game
 4. Simplify Path

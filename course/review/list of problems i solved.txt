@@ -118,6 +118,8 @@ Trapping Rain Water
 Linked List Cycle
 Linked List Cycle II
 4Sum
+Remove Duplicates (II)
+Container With Most Water
 
 
 problem i can't solve ---------------------------------------

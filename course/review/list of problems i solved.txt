@@ -45,8 +45,9 @@ Longest Substring with At Most K Distinct Characters
 Minimum Size Subarray Sum 
 Find All Anagrams in a String
 Valid Parentheses
-
-
+Min Stack
+Baseball Game
+Simplify Path
 
 revision on previously solved problems ---------------------------------------
 Contains Duplicate

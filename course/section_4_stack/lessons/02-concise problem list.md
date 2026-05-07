@@ -5,9 +5,9 @@
 # Phase A — Basic Stack Foundations
 
 1. Valid Parentheses <SOLVED>
-2. Min Stack
-3. Baseball Game
-4. Simplify Path
+2. Min Stack <SOLVED>
+3. Baseball Game <SOLVED>
+4. Simplify Path <SOLVED>
 5. Longest Valid Parentheses
 
 ---

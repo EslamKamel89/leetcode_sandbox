@@ -121,7 +121,8 @@ Linked List Cycle II
 4Sum
 Remove Duplicates (II)
 Container With Most Water
-
+Happy Number
+Remove Element
 
 problem i can't solve ---------------------------------------
 Find K Closest Elements (can't solve this problem may be after i study binary search i could solve it)

@@ -48,6 +48,8 @@ Valid Parentheses
 Min Stack
 Baseball Game
 Simplify Path
+Longest Valid Parentheses 
+Daily Temperatures
 
 revision on previously solved problems ---------------------------------------
 Contains Duplicate
@@ -123,6 +125,8 @@ Remove Duplicates (II)
 Container With Most Water
 Happy Number
 Remove Element
+Subarray Sum Equals K <i couldn't solve it until i looked at the answer>
+Top K Frequent Elements
 
 problem i can't solve ---------------------------------------
 Find K Closest Elements (can't solve this problem may be after i study binary search i could solve it)

@@ -8,13 +8,13 @@
 2. Min Stack <SOLVED>
 3. Baseball Game <SOLVED>
 4. Simplify Path <SOLVED>
-5. Longest Valid Parentheses
+5. Longest Valid Parentheses <SOLVED>
 
 ---
 
 # Phase B — Monotonic Stack
 
-6. Daily Temperatures
+6. Daily Temperatures <SOLVED>
 7. Next Greater Element I
 8. Online Stock Span
 9. Remove K Digits

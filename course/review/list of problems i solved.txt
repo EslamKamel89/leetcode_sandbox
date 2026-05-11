@@ -50,6 +50,9 @@ Baseball Game
 Simplify Path
 Longest Valid Parentheses 
 Daily Temperatures
+Next Greater Element I
+Online Stock Span
+
 
 revision on previously solved problems ---------------------------------------
 Contains Duplicate

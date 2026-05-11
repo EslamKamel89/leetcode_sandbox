@@ -15,8 +15,8 @@
 # Phase B — Monotonic Stack
 
 6. Daily Temperatures <SOLVED>
-7. Next Greater Element I
-8. Online Stock Span
+7. Next Greater Element I <SOLVED>
+8. Online Stock Span <SOLVED>
 9. Remove K Digits
 10. Largest Rectangle in Histogram
 11. Trapping Rain Water

@@ -132,6 +132,8 @@ Subarray Sum Equals K <i couldn't solve it until i looked at the answer>
 Top K Frequent Elements
 Subarray Sum Equals K
 Continuous Subarray Sum
+Longest Repeating Character Replacement
+Longest Substring Without Repeating Characters
 
 problem i can't solve ---------------------------------------
 Find K Closest Elements (can't solve this problem may be after i study binary search i could solve it)

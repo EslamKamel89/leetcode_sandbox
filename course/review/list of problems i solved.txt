@@ -11,16 +11,16 @@ Subarray Sum Equals K
 Continuous Subarray Sum
 Linked List Cycle
 Remove Duplicates from Sorted Array
-4Sum 
-Linked List Cycle II 
+4Sum
+Linked List Cycle II
 Remove Duplicates (II)
 Container With Most Water
 Happy Number
-Remove Element 
+Remove Element
 Trapping Rain Water
 Find the Duplicate Number
-Merge Sorted Array 
-Valid Palindrome 
+Merge Sorted Array
+Valid Palindrome
 Middle of Linked List (ADD)
 Sort Colors
 Valid Palindrome II
@@ -30,7 +30,7 @@ Sum of Square Numbers
 Two Sum IV
 Partition List
 Remove Duplicates (Linked List I, II)
-3Sum Smaller 
+3Sum Smaller
 String Compression
 K-diff Pairs
 Reverse String (I, II)
@@ -42,17 +42,18 @@ Longest Substring Without Repeating Characters
 Longest Repeating Character Replacement
 Fruit Into Baskets
 Longest Substring with At Most K Distinct Characters
-Minimum Size Subarray Sum 
+Minimum Size Subarray Sum
 Find All Anagrams in a String
 Valid Parentheses
 Min Stack
 Baseball Game
 Simplify Path
-Longest Valid Parentheses 
+Longest Valid Parentheses
 Daily Temperatures
 Next Greater Element I
 Online Stock Span
-
+Remove K Digits
+Asteroid Collision
 
 revision on previously solved problems ---------------------------------------
 Contains Duplicate
@@ -70,7 +71,7 @@ Linked List Cycle II
 Container With Most Water
 Remove Duplicates (II)
 Happy Number
-Remove Element 
+Remove Element
 Valid Anagram
 Find the Duplicate Number
 Trapping Rain Water
@@ -128,12 +129,14 @@ Remove Duplicates (II)
 Container With Most Water
 Happy Number
 Remove Element
-Subarray Sum Equals K <i couldn't solve it until i looked at the answer>
+Subarray Sum Equals K 
 Top K Frequent Elements
 Subarray Sum Equals K
 Continuous Subarray Sum
 Longest Repeating Character Replacement
 Longest Substring Without Repeating Characters
+Find All Anagrams in a String
+Permutation in String
 
 problem i can't solve ---------------------------------------
 Find K Closest Elements (can't solve this problem may be after i study binary search i could solve it)

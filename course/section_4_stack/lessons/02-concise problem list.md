@@ -17,15 +17,15 @@
 6. Daily Temperatures <SOLVED>
 7. Next Greater Element I <SOLVED>
 8. Online Stock Span <SOLVED>
-9. Remove K Digits
-10. Largest Rectangle in Histogram
-11. Trapping Rain Water
+9. Remove K Digits <SOLVED>
+10. Largest Rectangle in Histogram <HARD>
+11. Trapping Rain Water <SOLVED>
 
 ---
 
 # Phase C — Simulation & Hybrid Stacks
 
-12. Asteroid Collision
+12. Asteroid Collision <SOLVED>
 13. Validate Stack Sequences
 14. Decode String
 

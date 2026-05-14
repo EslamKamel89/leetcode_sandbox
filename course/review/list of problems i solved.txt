@@ -54,6 +54,7 @@ Next Greater Element I
 Online Stock Span
 Remove K Digits
 Asteroid Collision
+Validate Stack Sequences
 
 revision on previously solved problems ---------------------------------------
 Contains Duplicate

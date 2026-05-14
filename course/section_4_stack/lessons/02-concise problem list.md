@@ -26,7 +26,7 @@
 # Phase C — Simulation & Hybrid Stacks
 
 12. Asteroid Collision <SOLVED>
-13. Validate Stack Sequences
+13. Validate Stack Sequences <SOLVED>
 14. Decode String
 
 ---

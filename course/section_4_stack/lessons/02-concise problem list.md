@@ -27,7 +27,7 @@
 
 12. Asteroid Collision <SOLVED>
 13. Validate Stack Sequences <SOLVED>
-14. Decode String
+14. Decode String <<SOLVED>>
 
 ---
 

@@ -56,6 +56,9 @@ Remove K Digits
 Asteroid Collision
 Validate Stack Sequences
 Decode String
+Evaluate Reverse Polish Notation
+Basic Calculator II
+
 
 revision on previously solved problems ---------------------------------------
 Contains Duplicate

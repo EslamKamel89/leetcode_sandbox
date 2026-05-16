@@ -27,15 +27,15 @@
 
 12. Asteroid Collision <SOLVED>
 13. Validate Stack Sequences <SOLVED>
-14. Decode String <<SOLVED>>
+14. Decode String <SOLVED>
 
 ---
 
 # Phase D — Expression Evaluation
 
-15. Evaluate Reverse Polish Notation
-16. Basic Calculator II
-17. Basic Calculator
-18. Different Ways to Add Parentheses
+15. Evaluate Reverse Polish Notation <SOLVED>
+16. Basic Calculator II <SOLVED>
+17. Basic Calculator <HARD>
+18. Different Ways to Add Parentheses <HARD>
 
 ---

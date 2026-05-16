@@ -141,6 +141,5 @@ Find All Anagrams in a String
 Permutation in String
 Fruit Into Baskets
 Longest Substring with At Most K Distinct Characters
-
-problem i can't solve ---------------------------------------
-Find K Closest Elements (can't solve this problem may be after i study binary search i could solve it)
+Minimum Size Subarray Sum
+Daily Temperatures

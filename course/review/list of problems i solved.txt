@@ -148,3 +148,5 @@ Minimum Size Subarray Sum
 Daily Temperatures
 Online Stock Span
 Decode String
+Longest Valid Parentheses
+Remove K Digits

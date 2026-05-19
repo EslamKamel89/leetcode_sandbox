@@ -154,3 +154,5 @@ Online Stock Span
 Decode String
 Longest Valid Parentheses
 Remove K Digits
+Search a 2D Matrix
+Find First and Last Position of Element in Sorted Array

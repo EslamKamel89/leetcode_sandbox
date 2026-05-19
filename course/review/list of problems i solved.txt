@@ -58,7 +58,11 @@ Validate Stack Sequences
 Decode String
 Evaluate Reverse Polish Notation
 Basic Calculator II
-
+Binary Search
+Search Insert Position
+Search a 2D Matrix
+Find First and Last Position of Element in Sorted Array
+Find K Closest Elements 
 
 revision on previously solved problems ---------------------------------------
 Contains Duplicate

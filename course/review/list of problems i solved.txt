@@ -156,3 +156,5 @@ Longest Valid Parentheses
 Remove K Digits
 Search a 2D Matrix
 Find First and Last Position of Element in Sorted Array
+Find K Closest Elements
+Binary Search

@@ -11,23 +11,23 @@
 1. 34. Find First and Last Position of Element in Sorted Array <SOLVED>
 2. 275. H-Index II <HARD>
 3. 658. Find K Closest Elements <SOLVED>
-4. 436. Find Right Interval
+4. 436. Find Right Interval <SOLVED>
 
 ---
 
 # Pattern 3 — Binary Search on Answer
 
-1. 410. Split Array Largest Sum
-2. 475. Heaters
-3. 719. Find K-th Smallest Pair Distance
+1. 410. Split Array Largest Sum <HARD>
+2. 475. Heaters <HARD>
+3. 719. Find K-th Smallest Pair Distance <HARD>
 
 ---
 
 # Pattern 4 — Search in Rotated Sorted Array
 
-1. 33. Search in Rotated Sorted Array
-2. 153. Find Minimum in Rotated Sorted Array
-3. 81. Search in Rotated Sorted Array II
+1. 33. Search in Rotated Sorted Array <SOLVED>
+2. 153. Find Minimum in Rotated Sorted Array <SOLVED>
+3. 81. Search in Rotated Sorted Array II <HARD>
 
 ---
 

@@ -66,6 +66,9 @@ Find K Closest Elements
 Find Right Interval
 Search in Rotated Sorted Array
 Find Minimum in Rotated Sorted Array
+Sqrt(x) 
+First Bad Version
+Valid Perfect Square
 
 revision on previously solved problems ---------------------------------------
 Contains Duplicate

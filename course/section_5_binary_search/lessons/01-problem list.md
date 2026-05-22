@@ -33,6 +33,6 @@
 
 # Pattern 5 — Binary Search on Monotonic Functions
 
-1. 69. Sqrt(x)
-2. 278. First Bad Version
-3. 367. Valid Perfect Square
+1. 69. Sqrt(x) <SOLVED>
+2. 278. First Bad Version <SOLVED>
+3. 367. Valid Perfect Square <SOLVED>

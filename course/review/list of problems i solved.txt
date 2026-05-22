@@ -69,6 +69,8 @@ Find Minimum in Rotated Sorted Array
 Sqrt(x) 
 First Bad Version
 Valid Perfect Square
+Same Tree
+Invert Binary Tree
 
 revision on previously solved problems ---------------------------------------
 Contains Duplicate

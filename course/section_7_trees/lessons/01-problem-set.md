@@ -1,7 +1,7 @@
 # STAGE 1 — Basic DFS Traversal
 
-1. 100 — Same Tree
-2. 226 — Invert Binary Tree
+1. 100 — Same Tree <SOLVED>
+2. 226 — Invert Binary Tree <SOLVED>
 
 # STAGE 2 — Tree Height / Depth
 

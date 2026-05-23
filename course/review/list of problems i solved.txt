@@ -71,6 +71,10 @@ First Bad Version
 Valid Perfect Square
 Same Tree
 Invert Binary Tree
+Maximum Depth of Binary Tree 
+Balanced Binary Tree
+Diameter of Binary Tree
+Symmetric Tree
 
 revision on previously solved problems ---------------------------------------
 Contains Duplicate

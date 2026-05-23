@@ -5,13 +5,13 @@
 
 # STAGE 2 — Tree Height / Depth
 
-3. 104 — Maximum Depth of Binary Tree
-4. 110 — Balanced Binary Tree
-5. 543 — Diameter of Binary Tree
+3. 104 — Maximum Depth of Binary Tree <SOLVED>
+4. 110 — Balanced Binary Tree <SOLVED>
+5. 543 — Diameter of Binary Tree <SOLVED>
 
 # STAGE 3 — Tree Comparison / Validation
 
-6. 101 — Symmetric Tree
+6. 101 — Symmetric Tree <SOLVED>
 
 # STAGE 4 — Path-Based DFS
 

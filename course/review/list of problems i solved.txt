@@ -176,4 +176,10 @@ Same Tree
 Invert Binary Tree
 Continuous Subarray Sum
 Subarray Sum Equals K
+Diameter of Binary Tree
+Balanced Binary Tree
+Symmetric Tree
+Maximum Depth of Binary Tree
+Find Right Interval
+Valid Perfect Square
 

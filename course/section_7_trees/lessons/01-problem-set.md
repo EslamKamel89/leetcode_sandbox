@@ -15,14 +15,14 @@
 
 # STAGE 4 — Path-Based DFS
 
-7. 112 — Path Sum
-8. 113 — Path Sum II
+7. 112 — Path Sum <SOLVED>
+8. 113 — Path Sum II <SOLVED>
 
 # STAGE 5 — BFS Level Traversal
 
-9. 102 — Binary Tree Level Order Traversal
-10. 199 — Binary Tree Right Side View
-11. 111 — Minimum Depth of Binary Tree
+9. 102 — Binary Tree Level Order Traversal <SOLVED>
+10. 199 — Binary Tree Right Side View <SOLVED>
+11. 111 — Minimum Depth of Binary Tree <SOLVED>
 
 # STAGE 6 — BST Properties
 

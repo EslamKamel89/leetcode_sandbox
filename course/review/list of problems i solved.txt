@@ -75,6 +75,11 @@ Maximum Depth of Binary Tree
 Balanced Binary Tree
 Diameter of Binary Tree
 Symmetric Tree
+Path Sum
+Path Sum II
+Binary Tree Level Order Traversal
+Binary Tree Right Side View
+Minimum Depth of Binary Tree
 
 revision on previously solved problems ---------------------------------------
 Contains Duplicate

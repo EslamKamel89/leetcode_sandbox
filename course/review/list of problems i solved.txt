@@ -193,4 +193,10 @@ Binary Tree Right Side View
 Minimum Depth of Binary Tree
 Path Sum
 Asteroid Collision
+Basic Calculator II
+Validate Stack Sequences
+Evaluate Reverse Polish Notation
+Next Greater Element I
+Search Insert Position
+First Bad Version
 

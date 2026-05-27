@@ -199,4 +199,10 @@ Evaluate Reverse Polish Notation
 Next Greater Element I
 Search Insert Position
 First Bad Version
+Sqrt(x)
+Min Stack
+Simplify Path
+Baseball Game
+Search a 2D Matrix
+Find First and Last Position of Element in Sorted Array
 

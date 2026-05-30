@@ -26,12 +26,12 @@
 
 # STAGE 6 — BST Properties
 
-12. 98 — Validate Binary Search Tree
-13. 230 — Kth Smallest Element in a BST
-14. 235 — Lowest Common Ancestor of a BST
+12. 98 — Validate Binary Search Tree <SOLVED>
+13. 230 — Kth Smallest Element in a BST <SOLVED>
+14. 235 — Lowest Common Ancestor of a BST <SOLVED>
 
 # STAGE 7 — Advanced Recursive Aggregation
 
-15. 236 — Lowest Common Ancestor of a Binary Tree
-16. 124 — Binary Tree Maximum Path Sum
-17. 337 — House Robber III
+15. 236 — Lowest Common Ancestor of a Binary Tree <SOLVED>
+16. 124 — Binary Tree Maximum Path Sum <HARD>
+17. 337 — House Robber III <SOLVED>

@@ -80,6 +80,12 @@ Path Sum II
 Binary Tree Level Order Traversal
 Binary Tree Right Side View
 Minimum Depth of Binary Tree
+Validate Binary Search Tree
+Kth Smallest Element in a BST
+Lowest Common Ancestor of a BST
+Lowest Common Ancestor of a Binary Tree
+House Robber III
+
 
 revision on previously solved problems ---------------------------------------
 Contains Duplicate

@@ -229,5 +229,11 @@ Path Sum
 Linked List Cycle II
 Online Stock Span
 Trapping Rain Water
+Binary Tree Level Order Traversal
+Symmetric Tree
+Diameter of Binary Tree
+Two Sum II
+Fruit Into Baskets
+Lowest Common Ancestor of a Binary Tree
 
 

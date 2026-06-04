@@ -235,5 +235,10 @@ Diameter of Binary Tree
 Two Sum II
 Fruit Into Baskets
 Lowest Common Ancestor of a Binary Tree
-
+Validate Binary Search Tree
+Kth Smallest Element in a BST
+Find Right Interval
+Happy Number
+Search Insert Position
+Merge Sorted Array
 

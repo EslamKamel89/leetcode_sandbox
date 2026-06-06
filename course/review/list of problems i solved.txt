@@ -241,4 +241,9 @@ Find Right Interval
 Happy Number
 Search Insert Position
 Merge Sorted Array
-
+Top K Frequent Elements
+Remove Duplicates from Sorted Array
+Move Zeroes
+Longest Repeating Character Replacement
+Find K Closest Elements 
+House Robber III

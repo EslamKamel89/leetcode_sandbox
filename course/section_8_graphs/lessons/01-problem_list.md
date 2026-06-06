@@ -5,7 +5,7 @@
 
 # Phase B — BFS Foundation
 
-3. Rotting Oranges (994)
+3. Rotting Oranges (994) <SOLVED>
 
 # Phase C — Cycle Detection
 

@@ -1,7 +1,7 @@
 # Phase A — Graph Traversal Foundation
 
 1. Number of Islands (200) <SOLVED>
-2. Clone Graph (133)
+2. Clone Graph (133) <SOLVED>
 
 # Phase B — BFS Foundation
 

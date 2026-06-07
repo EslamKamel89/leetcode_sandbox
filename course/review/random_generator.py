@@ -1,7 +1,7 @@
 import random
 
 n = 6 
-max = 87 
+max = 90
 
 if n > max:
     raise ValueError("n cannot be greater than max when numbers must be unique.")

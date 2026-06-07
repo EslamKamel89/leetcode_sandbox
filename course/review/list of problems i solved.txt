@@ -250,3 +250,9 @@ Move Zeroes
 Longest Repeating Character Replacement
 Find K Closest Elements 
 House Robber III
+Move Zeroes
+Longest Substring with At Most K Distinct Characters
+Valid Perfect Square
+Invert Binary Tree
+Symmetric Tree
+Rotting Oranges

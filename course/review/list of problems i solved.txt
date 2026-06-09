@@ -88,6 +88,9 @@ House Robber III
 Number of Islands
 Clone Graph
 Rotting Oranges
+Graph Valid Tree
+Course Schedule
+Number of Provinces
 
 
 revision on previously solved problems ---------------------------------------

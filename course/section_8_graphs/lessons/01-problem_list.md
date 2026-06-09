@@ -9,15 +9,15 @@
 
 # Phase C — Cycle Detection
 
-4. Graph Valid Tree (261)
+4. Graph Valid Tree (261) <SOLVED>
 
 # Phase D — Topological Sort
 
-5. Course Schedule (207)
+5. Course Schedule (207) <SOLVED>
 
 # Phase E — Union-Find
 
-6. Number of Provinces (547)
+6. Number of Provinces (547) <SOLVED>
 7. Redundant Connection (684)
 
 # Phase F — Shortest Path

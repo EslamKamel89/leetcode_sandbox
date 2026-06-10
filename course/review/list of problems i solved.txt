@@ -265,3 +265,9 @@ Min Stack
 Find Right Interval
 First Bad Version
 Path Sum
+Remove Element
+Valid Palindrome
+Next Greater Element I
+Search a 2D Matrix
+First Bad Version
+Binary Tree Right Side View

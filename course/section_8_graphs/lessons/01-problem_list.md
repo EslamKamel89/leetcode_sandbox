@@ -18,7 +18,7 @@
 # Phase E — Union-Find
 
 6. Number of Provinces (547) <SOLVED>
-7. Redundant Connection (684)
+7. Redundant Connection (684) <HARD>
 
 # Phase F — Shortest Path
 

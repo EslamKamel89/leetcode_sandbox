@@ -277,3 +277,9 @@ Asteroid Collision
 Find First and Last Position of Element in Sorted Array
 Same Tree
 Lowest Common Ancestor of a Binary Tree
+Valid Anagram
+Remove Duplicates from Sorted Array
+Merge Sorted Array
+Longest Substring Without Repeating Characters
+Longest Valid Parentheses
+House Robber III

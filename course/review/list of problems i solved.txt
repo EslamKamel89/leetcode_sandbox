@@ -50,7 +50,7 @@ Baseball Game
 Simplify Path
 Longest Valid Parentheses
 Daily Temperatures
-Next Greater Element I
+Next Greater Element I 
 Online Stock Span
 Remove K Digits
 Asteroid Collision
@@ -283,3 +283,10 @@ Merge Sorted Array
 Longest Substring Without Repeating Characters
 Longest Valid Parentheses
 House Robber III
+Ransom Note
+Longest Substring with At Most K Distinct Characters
+Find All Anagrams in a String
+Next Greater Element I 
+Find Minimum in Rotated Sorted Array
+Invert Binary Tree
+//

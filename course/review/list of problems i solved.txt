@@ -91,6 +91,13 @@ Rotting Oranges
 Graph Valid Tree
 Course Schedule
 Number of Provinces
+Climbing Stairs
+House Robber
+Unique Paths
+Minimum Path Sum
+Edit Distance
+Coin Change
+Longest Increasing Subsequence
 
 
 revision on previously solved problems ---------------------------------------

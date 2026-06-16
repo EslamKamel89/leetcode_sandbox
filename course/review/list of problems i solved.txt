@@ -296,4 +296,7 @@ Find All Anagrams in a String
 Next Greater Element I 
 Find Minimum in Rotated Sorted Array
 Invert Binary Tree
-//
+Remove Duplicates (Linked List I, II)
+Baseball Game
+Evaluate Reverse Polish Notation
+Basic Calculator II

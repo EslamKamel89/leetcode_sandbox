@@ -303,4 +303,6 @@ Basic Calculator II
 Sum of Square Numbers
 Balanced Binary Tree
 Binary Tree Right Side View
-//
+Trapping Rain Water
+Middle of Linked List (ADD)
+Find Minimum in Rotated Sorted Array

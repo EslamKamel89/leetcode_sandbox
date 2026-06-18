@@ -102,7 +102,7 @@ problems = [
 "Longest Increasing Subsequence" ,
 ]
 
-n = 4
+n = 3
 
 
 

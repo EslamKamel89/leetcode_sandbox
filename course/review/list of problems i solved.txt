@@ -306,3 +306,7 @@ Binary Tree Right Side View
 Trapping Rain Water
 Middle of Linked List (ADD)
 Find Minimum in Rotated Sorted Array
+4Sum
+K-diff Pairs
+//
+Maximum Average Subarray I

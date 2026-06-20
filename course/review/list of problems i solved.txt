@@ -308,5 +308,14 @@ Middle of Linked List (ADD)
 Find Minimum in Rotated Sorted Array
 4Sum
 K-diff Pairs
-//
 Maximum Average Subarray I
+Find the Duplicate Number
+Binary Search
+House Robber III
+//
+
+
+linkedin post ---------------------------------------
+Find the Duplicate Number
+House Robber III
+

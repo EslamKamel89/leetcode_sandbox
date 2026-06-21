@@ -17,26 +17,34 @@ class Solution:
             current = current.next
         return vals == vals[::-1]
 
-    def isPalindrome(self, head: Optional[ListNode]) -> bool:
-        fast = head
-        slow = head
-        # find the middle of the linked list (slow)
+    def reverse(self, head):
+        previous = None
+        current = head
+
+        while current:
+            next_node = current.next
+            current.next = previous
+            previous = current
+            current = next_node
+
+        return previous
+
+    def isPalindrome(self, head):
+
+        slow = fast = head
+
         while fast and fast.next:
-            slow = slow.next  # type: ignore
+            slow = slow.next
             fast = fast.next.next
-        # reverse the direction
-        prev: Optional[ListNode] = None
-        while slow:
-            temp = slow.next
-            slow.next = prev
-            prev = slow
-            slow = temp
-        assert prev is not None
-        # check if this linked list is a palindrome
-        left, right = head, prev
+
+        left = head
+        right = self.reverse(slow)
+
         while right:
-            if left.val != right.val:  # type: ignore
+            if left.val != right.val:
                 return False
-            left = left.next  # type: ignore
+
+            left = left.next
             right = right.next
+
         return True

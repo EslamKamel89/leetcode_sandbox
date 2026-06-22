@@ -315,6 +315,8 @@ House Robber III
 Palindrome Linked List
 Maximum Depth of Binary Tree
 Sqrt(x) 
-
+Permutation in String
+Search in Rotated Sorted Array
+Number of Islands
 
 

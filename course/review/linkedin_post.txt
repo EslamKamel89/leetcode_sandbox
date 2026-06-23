@@ -2,3 +2,5 @@ linkedin post ---------------------------------------
 Find the Duplicate Number
 House Robber III
 Palindrome Linked List
+Valid Palindrome II
+Validate Stack Sequences

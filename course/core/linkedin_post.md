@@ -16,7 +16,7 @@ generate an image that contains the solution walkthrough. follow the input step 
 BATCH 2 — LINKEDIN POST
 ==================================================
 
-generate a linkedin post about the problem with slightly funny tone assume that i will attach the walkthrough solution you just created in batch 1 and screenshot for the actual solution from leetcode
+generate a linkedin post about the problem assume that i will attach the walkthrough solution you just created in batch 1 and screenshot for the actual solution from leetcode. always start with the problem number and name in the first line of the post
 
 ==================================================
 PROBLEM

@@ -320,6 +320,9 @@ Search in Rotated Sorted Array
 Number of Islands
 Valid Palindrome II
 Validate Stack Sequences
-//
 Unique Paths
+K-diff Pairs
+Evaluate Reverse Polish Notation
+//
+Minimum Path Sum
 

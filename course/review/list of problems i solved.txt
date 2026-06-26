@@ -323,6 +323,9 @@ Validate Stack Sequences
 Unique Paths
 K-diff Pairs
 Evaluate Reverse Polish Notation
-//
 Minimum Path Sum
+//
+Minimum Size Subarray Sum
+Find K Closest Elements 
+Sqrt(x) 
 

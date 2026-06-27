@@ -327,5 +327,8 @@ Minimum Path Sum
 Minimum Size Subarray Sum
 Find K Closest Elements 
 Sqrt(x) 
+Two Sum IV
+Validate Binary Search Tree
+Minimum Path Sum
 //
 

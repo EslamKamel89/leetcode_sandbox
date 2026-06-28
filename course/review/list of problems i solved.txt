@@ -330,5 +330,9 @@ Sqrt(x)
 Two Sum IV
 Validate Binary Search Tree
 Minimum Path Sum
+Sort Colors
+Two Sum IV
+Edit Distance
 //
+
 

@@ -333,6 +333,8 @@ Minimum Path Sum
 Sort Colors
 Two Sum IV
 Edit Distance
+Minimum Size Subarray Sum
+Baseball Game
 //
-
+Find First and Last Position of Element in Sorted Array
 

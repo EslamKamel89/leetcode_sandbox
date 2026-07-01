@@ -339,4 +339,7 @@ Find First and Last Position of Element in Sorted Array
 Evaluate Reverse Polish Notation
 Path Sum II
 House Robber
+Search Insert Position
 //
+Valid Perfect Square
+Unique Paths

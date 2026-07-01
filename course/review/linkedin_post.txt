@@ -8,5 +8,6 @@ Minimum Path Sum
 Minimum Size Subarray Sum
 Find K Closest Elements 
 Sort Colors
+Search Insert Position
 
 

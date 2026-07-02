@@ -2,7 +2,7 @@ import random
 
 problems = [
     ("Valid Anagram", 0),
-    ("Contains Duplicate", 0),
+    ("Contains Duplicate", 1),
     ("Group Anagrams", 0),
     ("Top K Frequent Elements", 0),
     ("Ransom Note", 0),
@@ -38,7 +38,7 @@ problems = [
     ("Reverse String (I, II)", 0),
     ("Intersection of Two Linked Lists", 0),
     ("Reverse Vowels", 0),
-    ("Maximum Average Subarray I", 0),
+    ("Maximum Average Subarray I", 1),
     ("Permutation in String", 0),
     ("Longest Substring Without Repeating Characters", 0),
     ("Longest Repeating Character Replacement", 0),
@@ -65,7 +65,7 @@ problems = [
     ("Search a 2D Matrix", 0),
     ("Find First and Last Position of Element in Sorted Array", 1),
     ("Find K Closest Elements ", 0),
-    ("Find Right Interval", 0),
+    ("Find Right Interval", 1),
     ("Search in Rotated Sorted Array", 0),
     ("Find Minimum in Rotated Sorted Array", 0),
     ("Sqrt(x) ", 0),

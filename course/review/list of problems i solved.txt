@@ -345,4 +345,7 @@ Unique Paths
 Contains Duplicate
 Maximum Average Subarray I
 Find Right Interval
+Move Zeroes
+3Sum Smaller
+Asteroid Collision
 //

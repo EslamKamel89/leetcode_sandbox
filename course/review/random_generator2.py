@@ -104,7 +104,9 @@ problems = [
 
 n = 3
 review_counter = 0
+print("problems count: ", len(problems))
 problems = [p for p in problems if p[1] == 0]
+print("remaining problems: ", len(problems))
 if not problems:
     print(
         "All problems is reviewed reset to start fresh and don't forget to increment the review counter"

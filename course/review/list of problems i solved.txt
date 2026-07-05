@@ -348,4 +348,7 @@ Find Right Interval
 Move Zeroes
 3Sum Smaller
 Asteroid Collision
+Valid Palindrome
+Maximum Depth of Binary Tree 
 //
+Lowest Common Ancestor of a BST

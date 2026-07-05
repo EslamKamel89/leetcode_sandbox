@@ -22,7 +22,7 @@ problems = [
     ("Trapping Rain Water", 0),
     ("Find the Duplicate Number", 0),
     ("Merge Sorted Array", 0),
-    ("Valid Palindrome", 0),
+    ("Valid Palindrome", 1),
     ("Middle of Linked List (ADD)", 0),
     ("Sort Colors", 1),
     ("Valid Palindrome II", 0),
@@ -73,7 +73,7 @@ problems = [
     ("Valid Perfect Square", 1),
     ("Same Tree", 0),
     ("Invert Binary Tree", 0),
-    ("Maximum Depth of Binary Tree ", 0),
+    ("Maximum Depth of Binary Tree ", 1),
     ("Balanced Binary Tree", 0),
     ("Diameter of Binary Tree", 0),
     ("Symmetric Tree", 0),
@@ -84,7 +84,7 @@ problems = [
     ("Minimum Depth of Binary Tree", 0),
     ("Validate Binary Search Tree", 0),
     ("Kth Smallest Element in a BST", 0),
-    ("Lowest Common Ancestor of a BST", 0),
+    ("Lowest Common Ancestor of a BST", 1),
     ("Lowest Common Ancestor of a Binary Tree", 0),
     ("House Robber III", 0),
     ("Number of Islands", 0),
@@ -103,10 +103,12 @@ problems = [
 ]
 
 n = 3
-
+review_counter = 0
 problems = [p for p in problems if p[1] == 0]
 if not problems:
-    print("All problems is reviewed reset to start fresh")
+    print(
+        "All problems is reviewed reset to start fresh and don't forget to increment the review counter"
+    )
     exit()
 
 numbers = random.sample(range(0, len(problems)), n)

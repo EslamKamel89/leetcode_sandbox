@@ -52,7 +52,7 @@ problems = [
     ("Simplify Path", 0),
     ("Longest Valid Parentheses", 0),
     ("Daily Temperatures", 0),
-    ("Next Greater Element I ", 0),
+    ("Next Greater Element I ", 1),
     ("Online Stock Span", 0),
     ("Remove K Digits", 0),
     ("Asteroid Collision", 1),
@@ -62,7 +62,7 @@ problems = [
     ("Basic Calculator II", 0),
     ("Binary Search", 0),
     ("Search Insert Position", 1),
-    ("Search a 2D Matrix", 0),
+    ("Search a 2D Matrix", 1),
     ("Find First and Last Position of Element in Sorted Array", 1),
     ("Find K Closest Elements ", 0),
     ("Find Right Interval", 1),
@@ -99,7 +99,7 @@ problems = [
     ("Minimum Path Sum", 0),
     ("Edit Distance", 1),
     ("Coin Change", 0),
-    ("Longest Increasing Subsequence", 0),
+    ("Longest Increasing Subsequence", 1),
 ]
 
 n = 3

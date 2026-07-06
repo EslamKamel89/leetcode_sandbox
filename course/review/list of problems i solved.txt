@@ -351,4 +351,7 @@ Asteroid Collision
 Valid Palindrome
 Maximum Depth of Binary Tree 
 Lowest Common Ancestor of a BST
+Next Greater Element I 
+Search a 2D Matrix
+Longest Increasing Subsequence
 //

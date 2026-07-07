@@ -9,5 +9,7 @@ Minimum Size Subarray Sum
 Find K Closest Elements 
 Sort Colors
 Search Insert Position
+Fruit Into Baskets
+Daily Temperatures
 
 

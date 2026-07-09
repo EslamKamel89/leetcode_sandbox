@@ -360,4 +360,7 @@ Validate Stack Sequences
 Remove Duplicates (II)
 Partition List
 String Compression
+4Sum
+K-diff Pairs
+Reverse String (I, II)
 //

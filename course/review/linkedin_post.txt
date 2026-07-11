@@ -11,5 +11,7 @@ Sort Colors
 Search Insert Position
 Fruit Into Baskets
 Daily Temperatures
+Remove K Digits
+
 
 

@@ -363,4 +363,7 @@ String Compression
 4Sum
 K-diff Pairs
 Reverse String (I, II)
+Remove K Digits
+Balanced Binary Tree
+House Robber III
 //

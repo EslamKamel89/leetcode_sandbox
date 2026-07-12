@@ -366,4 +366,7 @@ Reverse String (I, II)
 Remove K Digits
 Balanced Binary Tree
 House Robber III
+Permutation in String
+Valid Parentheses
 //
+Minimum Depth of Binary Tree

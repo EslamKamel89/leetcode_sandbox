@@ -372,4 +372,7 @@ Minimum Depth of Binary Tree
 Find All Anagrams in a String
 Kth Smallest Element in a BST
 Course Schedule
+Top K Frequent Elements
+Online Stock Span
+Find K Closest Elements 
 //

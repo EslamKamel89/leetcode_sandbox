@@ -378,4 +378,7 @@ Find K Closest Elements
 Linked List Cycle
 Valid Palindrome II
 Same Tree
+Continuous Subarray Sum
+Trapping Rain Water
+Middle of Linked List (ADD)
 //

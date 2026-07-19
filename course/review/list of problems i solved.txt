@@ -381,4 +381,7 @@ Same Tree
 Continuous Subarray Sum
 Trapping Rain Water
 Middle of Linked List (ADD)
+Binary Search
+Binary Tree Right Side View
+Climbing Stairs
 //

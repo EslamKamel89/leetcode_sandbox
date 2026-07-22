@@ -390,4 +390,6 @@ Number of Provinces
 Container With Most Water
 Clone Graph
 Rotting Oranges
+Reverse Vowels
+Min Stack
 //

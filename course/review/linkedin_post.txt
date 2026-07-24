@@ -23,6 +23,7 @@ Number of Provinces
 Container With Most Water
 Rotting Oranges
 Min Stack
+Simplify Path
 
 
 

@@ -398,4 +398,7 @@ Simplify Path
 3Sum
 Linked List Cycle II
 Binary Tree Level Order Traversal
+Ransom Note
+Merge Sorted Array
+Intersection of Two Linked Lists
 //

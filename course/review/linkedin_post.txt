@@ -26,6 +26,9 @@ Min Stack
 Simplify Path
 Linked List Cycle II
 Binary Tree Level Order Traversal
+Ransom Note
+Intersection of Two Linked Lists
+
 
 
 

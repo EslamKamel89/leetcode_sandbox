@@ -401,4 +401,7 @@ Binary Tree Level Order Traversal
 Ransom Note
 Merge Sorted Array
 Intersection of Two Linked Lists
+Happy Number
+Remove Duplicates (Linked List I, II)
+Search in Rotated Sorted Array
 //

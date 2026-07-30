@@ -1,7 +1,7 @@
 import random
 
 problems = [
-    ("Valid Anagram", 0),
+    ("Valid Anagram", 1),
     ("Contains Duplicate", 1),
     ("Group Anagrams", 0),
     ("Top K Frequent Elements", 1),
@@ -18,9 +18,9 @@ problems = [
     ("Remove Duplicates (II)", 1),
     ("Container With Most Water", 1),
     ("Happy Number", 1),
-    ("Remove Element", 0),
+    ("Remove Element", 1),
     ("Trapping Rain Water", 1),
-    ("Find the Duplicate Number", 0),
+    ("Find the Duplicate Number", 1),
     ("Merge Sorted Array", 1),
     ("Valid Palindrome", 1),
     ("Middle of Linked List (ADD)", 1),

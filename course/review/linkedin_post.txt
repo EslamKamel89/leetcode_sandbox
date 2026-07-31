@@ -31,6 +31,8 @@ Intersection of Two Linked Lists
 Happy Number
 Remove Duplicates (Linked List I, II)
 Search in Rotated Sorted Array
+Number of Islands
+Coin Change
 
 
 

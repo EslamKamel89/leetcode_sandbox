@@ -26,7 +26,7 @@ problems = [
     ("Middle of Linked List (ADD)", 1),
     ("Sort Colors", 1),
     ("Valid Palindrome II", 1),
-    ("Palindrome Linked List", 0),
+    ("Palindrome Linked List", 1),
     ("Move Zeroes", 1),
     ("Sum of Square Numbers", 0),
     ("Two Sum IV", 1),
@@ -87,7 +87,7 @@ problems = [
     ("Lowest Common Ancestor of a BST", 1),
     ("Lowest Common Ancestor of a Binary Tree", 0),
     ("House Robber III", 1),
-    ("Number of Islands", 0),
+    ("Number of Islands", 1),
     ("Clone Graph", 1),
     ("Rotting Oranges", 1),
     ("Graph Valid Tree", 0),
@@ -98,7 +98,7 @@ problems = [
     ("Unique Paths", 1),
     ("Minimum Path Sum", 0),
     ("Edit Distance", 1),
-    ("Coin Change", 0),
+    ("Coin Change", 1),
     ("Longest Increasing Subsequence", 1),
 ]
 

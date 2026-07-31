@@ -407,4 +407,7 @@ Search in Rotated Sorted Array
 Valid Anagram
 Remove Element
 Find the Duplicate Number
+Palindrome Linked List
+Number of Islands
+Coin Change
 //

@@ -33,6 +33,8 @@ Remove Duplicates (Linked List I, II)
 Search in Rotated Sorted Array
 Number of Islands
 Coin Change
+Longest Substring Without Repeating Characters
+First Bad Version
 
 
 

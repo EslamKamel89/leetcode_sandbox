@@ -410,4 +410,7 @@ Find the Duplicate Number
 Palindrome Linked List
 Number of Islands
 Coin Change
+Longest Substring Without Repeating Characters
+First Bad Version
+Symmetric Tree
 //

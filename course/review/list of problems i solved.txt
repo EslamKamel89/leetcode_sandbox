@@ -416,4 +416,7 @@ Symmetric Tree
 Decode String
 Diameter of Binary Tree
 Path Sum
+Longest Substring with At Most K Distinct Characters
+Sqrt(x) 
+Lowest Common Ancestor of a Binary Tree
 //

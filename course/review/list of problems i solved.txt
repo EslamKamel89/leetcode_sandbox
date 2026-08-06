@@ -419,4 +419,7 @@ Path Sum
 Longest Substring with At Most K Distinct Characters
 Sqrt(x) 
 Lowest Common Ancestor of a Binary Tree
+Remove Duplicates from Sorted Array
+Find Minimum in Rotated Sorted Array
+Validate Binary Search Tree
 //

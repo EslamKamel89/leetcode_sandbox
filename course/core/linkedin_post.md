@@ -22,10 +22,17 @@ generate a linkedin post about the problem assume that i will attach the walkthr
 PROBLEM
 ==================================================
 
-[PASTE ORIGINAL LEETCODE PROBLEM HERE]
+```txt
+
+
+```
 
 ==================================================
 MY SOLUTION
 ==================================================
 
-[PASTE FINAL ACCEPTED SOLUTION HERE]
+```python
+
+
+
+```

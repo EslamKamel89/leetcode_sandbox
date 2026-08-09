@@ -422,4 +422,7 @@ Lowest Common Ancestor of a Binary Tree
 Remove Duplicates from Sorted Array
 Find Minimum in Rotated Sorted Array
 Validate Binary Search Tree
+Group Anagrams
+Basic Calculator II
+Graph Valid Tree
 //

@@ -425,4 +425,7 @@ Validate Binary Search Tree
 Group Anagrams
 Basic Calculator II
 Graph Valid Tree
+Two Sum
+Sum of Square Numbers
+Longest Valid Parentheses
 //

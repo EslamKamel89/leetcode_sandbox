@@ -431,5 +431,8 @@ Longest Valid Parentheses
 Minimum Path Sum
 Baseball Game
 Same Tree
-//
 Number of Islands
+Fruit Into Baskets
+Longest Substring with At Most K Distinct Characters
+Simplify Path
+//

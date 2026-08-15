@@ -42,7 +42,8 @@ Minimum Path Sum
 Baseball Game
 Same Tree
 Longest Substring with At Most K Distinct Characters
-
+Move Zeroes
+Symmetric Tree
 
 
 

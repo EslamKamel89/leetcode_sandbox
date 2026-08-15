@@ -435,4 +435,7 @@ Number of Islands
 Fruit Into Baskets
 Longest Substring with At Most K Distinct Characters
 Simplify Path
+Move Zeroes
+Find Right Interval
+Symmetric Tree
 //

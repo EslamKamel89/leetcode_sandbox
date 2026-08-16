@@ -1,0 +1,67 @@
+367. Valid Perfect Square
+
+Binary Search isn't just for sorted arrays. 😄
+
+Here, we need to determine whether `num` is a perfect square without using `sqrt()`.
+
+For:
+
+num = 16
+
+we're looking for some `m` where:
+
+m * m == 16
+
+Instead of checking every number from `1 → 16`, we binary-search the possible answer:
+
+left = 0
+right = num
+
+For `16`:
+
+m = 8
+8² = 64  → too big → move right
+
+m = 3
+3² = 9   → too small → move left
+
+m = 5
+5² = 25  → too big → move right
+
+m = 4
+4² = 16  → found! ✅
+
+The key observation is that:
+
+0² < 1² < 2² < 3² < ...
+
+The square function is monotonically increasing, so if `m²` is too large, everything to its right is also too large.
+
+if sq == num:
+    return True
+
+if sq > num:
+    right = m - 1
+else:
+    left = m + 1
+
+For `num = 14`, eventually:
+
+left > right
+
+which means we've exhausted every possible candidate.
+
+No square found → `False`.
+
+⏱️ Time: O(log n)
+💾 Space: O(1)
+
+The pattern to remember:
+
+Find a monotonic relationship → binary search the answer space.
+
+Sometimes Binary Search isn't searching an array.
+
+It's searching for the answer itself. 🔍
+
+#leetcode #python #algorithms #datastructures #binarysearch #codinginterview #programming #softwareengineering

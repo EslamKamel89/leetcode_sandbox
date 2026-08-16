@@ -438,4 +438,7 @@ Simplify Path
 Move Zeroes
 Find Right Interval
 Symmetric Tree
+Next Greater Element I 
+Valid Perfect Square
+Path Sum
 //

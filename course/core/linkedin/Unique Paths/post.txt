@@ -1,0 +1,54 @@
+62. Unique Paths
+
+A robot has one job: get from the top-left to the bottom-right.
+
+Unfortunately, it only knows two moves:
+
+→ Right
+↓ Down
+
+So we need to count all possible paths.
+
+The key insight is Dynamic Programming.
+
+For every cell:
+
+dp[i][j] = paths from top + paths from left
+
+Why?
+
+Because the robot can only enter a cell from those two directions.
+
+For a `3 × 7` grid, the table becomes:
+
+1  1  1  1  1  1  1
+1  2  3  4  5  6  7
+1  3  6 10 15 21 28
+
+The final cell gives:
+
+answer = 28
+
+And the base case is important:
+
+if 0 in [i, j]:
+    grid[i][j] = 1
+
+Every cell in the first row or first column has exactly one possible path.
+
+The nice part of this solution is that the problem becomes almost mechanical:
+
+Initialize → take top + left → repeat.
+
+grid[i][j] += grid[i - 1][j] + grid[i][j - 1]
+
+Time: O(m × n)
+Space: O(m × n)
+
+The bigger DP lesson:
+
+Don't try to count all paths directly. Build the answer from smaller answers you already know.
+
+Once you see that relationship, the grid starts doing the counting for you.
+
+#leetcode #python #algorithms #dynamicprogramming #datastructures #codinginterview #programming #softwareengineering

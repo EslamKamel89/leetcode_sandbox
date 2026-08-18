@@ -441,4 +441,7 @@ Symmetric Tree
 Next Greater Element I 
 Valid Perfect Square
 Path Sum
+Valid Palindrome II
+Path Sum
+Unique Paths
 //

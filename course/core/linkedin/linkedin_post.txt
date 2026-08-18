@@ -45,6 +45,8 @@ Longest Substring with At Most K Distinct Characters
 Move Zeroes
 Symmetric Tree
 Next Greater Element I 
+Path Sum
+Unique Paths
 
 
 

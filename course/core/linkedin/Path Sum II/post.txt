@@ -1,0 +1,78 @@
+113. Path Sum II
+
+This is where DFS meets backtracking.
+
+The goal isn't to find one valid path.
+
+It's to find all root-to-leaf paths whose sum equals `targetSum`.
+
+For:
+
+targetSum = 22
+
+5 → 4 → 11 → 2 = 22 ✅
+5 → 8 → 4 → 5 = 22 ✅
+
+The DFS carries two pieces of state:
+
+path
+curr_sum
+
+At every node:
+
+curr_sum += node.val
+path += f"{node.val},"
+
+When we reach a leaf, we check:
+
+if not node.left and not node.right:
+    if curr_sum == targetSum:
+        res.append(...)
+
+The important difference from a normal DFS:
+
+We cannot stop after finding one answer.
+
+We must continue exploring the remaining branches.
+
+Think of the traversal as:
+
+Explore
+   ↓
+Reach leaf
+   ↓
+Valid? → save path
+   ↓
+Backtrack
+   ↓
+Explore another branch
+
+For example:
+
+5 → 4 → 11 → 7
+             ❌ 27
+
+backtrack
+
+5 → 4 → 11 → 2
+             ✅ 22
+
+Then DFS returns to `5` and explores the right subtree:
+
+5 → 8 → 4 → 5
+             ✅ 22
+
+The key idea:
+
+DFS finds the paths. Backtracking lets us explore all of them.
+
+⏱️ Time: O(n) traversal
+💾 Space: O(h) recursion depth, excluding the returned paths
+
+This pattern shows up everywhere:
+
+Choose → Explore → Check → Backtrack.
+
+Once you recognize that pattern, a lot of recursive problems become much easier to reason about.
+
+#leetcode #python #algorithms #datastructures #binarytree #dfs #backtracking #recursion #codinginterview #softwareengineering

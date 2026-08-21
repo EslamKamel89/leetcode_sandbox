@@ -1,0 +1,76 @@
+704. Binary Search
+
+One of the simplest algorithms to explain.
+
+And one of the easiest to mess up with `left` and `right`. 😄
+
+The idea:
+
+sorted array
+     ↓
+check middle
+     ↓
+discard half
+     ↓
+repeat
+
+For:
+
+nums = [-1,0,3,5,9,12]
+target = 9
+
+First:
+
+left = 0
+right = 5
+mid = 2
+nums[mid] = 3
+
+`3 < 9`, so everything on the left can be ignored.
+
+[ -1  0  3 | 5  9  12 ]
+             ↑
+           search
+
+Now:
+
+left = 3
+right = 5
+mid = 4
+nums[mid] = 9
+
+Found it → return `4`.
+
+The important part isn't calculating `mid`.
+
+It's knowing which half is impossible after every comparison:
+
+if mid > target:
+    right = m - 1
+else:
+    left = m + 1
+
+That is what gives Binary Search its `O(log n)` complexity.
+
+Instead of checking `n` elements:
+
+n → n/2 → n/4 → n/8 → ...
+
+For a missing target, the loop eventually reaches:
+
+left > right
+
+and we know there's nowhere left to search.
+
+Time: O(log n)
+Space: O(1)
+
+The pattern to remember:
+
+Sorted data + monotonic decision → think Binary Search.
+
+The real skill isn't memorizing the template.
+
+It's recognizing when you can safely throw away half the search space.
+
+#leetcode #python #algorithms #binarysearch #datastructures #codinginterview #programming #softwareengineering

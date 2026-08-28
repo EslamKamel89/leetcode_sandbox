@@ -1,0 +1,53 @@
+125. Valid Palindrome
+
+Two pointers, one string, and a lot of characters we simply don't care about.
+
+The idea is straightforward:
+
+→ `left` starts at the beginning
+← `right` starts at the end
+↪ Skip non-alphanumeric characters
+🔍 Compare both characters case-insensitively
+
+For:
+
+`"A man, a plan, a canal: Panama"`
+
+we effectively compare:
+
+`a ↔ a`
+`m ↔ m`
+`a ↔ a`
+`n ↔ n`
+`...`
+
+Everything matches → `True`.
+
+For `"race a car"`:
+
+`r ↔ r`
+`a ↔ a`
+`c ↔ c`
+`e ↔ a` ❌
+
+So we immediately return `False`.
+
+The useful part is that we don't need to create a cleaned string first.
+
+We can do everything in-place with two pointers:
+
+while left <= right:
+    # skip invalid characters
+    # compare valid characters
+    # move both pointers
+
+Time: O(n)
+Space: O(1)
+
+The pattern:
+
+Compare from both ends → skip what doesn't matter → stop at the first mismatch.
+
+Sometimes the best optimization is simply not creating another string.
+
+#leetcode #python #algorithms #datastructures #twopointers #strings #codinginterview #programming #softwareengineering

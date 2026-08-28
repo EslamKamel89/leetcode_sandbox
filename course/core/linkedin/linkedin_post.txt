@@ -51,6 +51,8 @@ Basic Calculator II
 Binary Search
 Path Sum II
 Middle of Linked List (ADD)
+Valid Palindrome
+Longest Repeating Character Replacement
 //
 
 

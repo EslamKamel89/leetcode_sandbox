@@ -1,0 +1,50 @@
+424. Longest Repeating Character Replacement
+
+The sliding window has one rule:
+
+The window is valid if we can make every character the same using at most `k` replacements.
+
+For a window:
+
+"AABAB"
+
+with `k = 1`:
+
+window size = 5
+most frequent = 3
+replacements = 5 - 3 = 2
+
+Too many replacements → shrink from the left.
+
+For:
+
+"ABAB", k = 2
+
+window size = 4
+most frequent = 2
+replacements = 4 - 2 = 2
+
+Valid → answer is `4`.
+
+The key formula:
+
+replacements = window_size - max_frequency
+
+Why?
+
+We keep the most frequent character and replace everything else.
+
+The algorithm is simply:
+
+Expand → count → check → shrink if necessary → update answer.
+
+Time: O(n)
+Space: O(1) because there are only 26 uppercase letters.
+
+The important sliding-window lesson:
+
+Don't ask whether the substring already has identical characters. Ask whether it can become identical within the allowed budget.
+
+That small change in perspective turns the problem into a clean sliding-window pattern.
+
+#leetcode #python #algorithms #slidingwindow #datastructures #strings #codinginterview #programming #softwareengineering

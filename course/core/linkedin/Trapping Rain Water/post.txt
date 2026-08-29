@@ -1,0 +1,53 @@
+42. Trapping Rain Water
+
+This problem looks like a bunch of bars waiting for rain.
+
+The key question is:
+
+How much water can each position hold?
+
+For every index:
+
+water = min(max_left, max_right) - height[i]
+
+Why the `min`?
+
+Because water needs a wall on both sides. The shorter wall is the limit.
+
+My solution does this in two passes:
+
+1. Build `max_right` — the tallest bar from each position to the right.
+2. Traverse from right to left while maintaining `max_left`.
+3. Calculate the water trapped at each index.
+
+For the classic example:
+
+[0,1,0,2,1,0,1,3,2,1,2,1]
+
+the trapped water adds up to:
+
+0 + 0 + 1 + 0 + 1 + 3 + 0 + 0 + 0 + 1 + 0 + 0
+= 6
+
+The interesting part isn't the arithmetic.
+
+It's realizing that every index is basically asking:
+
+“How high could the water rise here?”
+
+Answer:
+
+min(left wall, right wall)
+
+Then subtract the bar already occupying that space.
+
+Time: O(n)
+Space: O(n)
+
+The pattern:
+
+Find the boundary on both sides → determine the limiting height → calculate the gap.
+
+Water management solved. Now if only real-world debugging worked this neatly.
+
+#leetcode #python #algorithms #datastructures #arrays #twopointers #codinginterview #programming #softwareengineering

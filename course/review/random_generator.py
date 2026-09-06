@@ -53,7 +53,7 @@ problems = [
     ("Longest Valid Parentheses", 0),
     ("Daily Temperatures", 0),
     ("Next Greater Element I ", 0),
-    ("Online Stock Span",),
+    ("Online Stock Span", 0),
     ("Remove K Digits", 0),
     ("Asteroid Collision", 0),
     ("Validate Stack Sequences", 0),
@@ -68,7 +68,7 @@ problems = [
     ("Find Right Interval", 0),
     ("Search in Rotated Sorted Array", 0),
     ("Find Minimum in Rotated Sorted Array", 0),
-    ("Sqrt(x) ", 0),
+    ("Sqrt(x)", 0),
     ("First Bad Version", 0),
     ("Valid Perfect Square", 1),
     ("Same Tree", 1),
@@ -102,7 +102,7 @@ problems = [
     ("Longest Increasing Subsequence", 0),
 ]
 
-n = 3
+n = 2
 review_counter = 2
 print("problems count: ", len(problems))
 problems = [p for p in problems if p[1] == 0]

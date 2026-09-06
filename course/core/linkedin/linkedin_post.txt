@@ -55,7 +55,8 @@ Valid Palindrome
 Longest Repeating Character Replacement
 Trapping Rain Water
 //
-
+String Compression
+Sqrt(x)
 
 
 

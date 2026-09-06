@@ -457,3 +457,5 @@ Trapping Rain Water
 Sum of Square Numbers
 Online Stock Span
 //
+String Compression
+Sqrt(x)

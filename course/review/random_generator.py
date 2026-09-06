@@ -68,7 +68,7 @@ problems = [
     ("Find Right Interval", 0),
     ("Search in Rotated Sorted Array", 0),
     ("Find Minimum in Rotated Sorted Array", 0),
-    ("Sqrt(x)", 0),
+    ("Sqrt(x)", 1),
     ("First Bad Version", 0),
     ("Valid Perfect Square", 1),
     ("Same Tree", 1),

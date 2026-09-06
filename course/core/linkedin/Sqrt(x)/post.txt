@@ -1,0 +1,52 @@
+69. Sqrt(x)
+
+Another Binary Search problem, but this time there isn't an array to search.
+
+We're searching the answer space.
+
+For `x = 8`, we want the largest integer `m` such that:
+
+m × m ≤ 8
+
+The search looks like:
+
+m = 4 → 16 > 8 → too big
+m = 1 →  1 ≤ 8 → valid
+m = 2 →  4 ≤ 8 → valid
+m = 3 →  9 > 8 → too big
+
+Eventually:
+
+left = 3
+right = 2
+
+So we return:
+
+right = 2
+
+That's exactly `floor(√8)`.
+
+The important insight is the return value.
+
+We're not looking for an exact square. We're looking for the largest valid `m`.
+
+if m * m > x:
+    right = m - 1
+else:
+    left = m + 1
+
+return right
+
+So the pattern is:
+
+Valid → search right for a larger answer.
+Too large → search left.
+
+Time: O(log x)
+Space: O(1)
+
+Binary Search doesn't always need a sorted array.
+
+Sometimes the thing being searched is simply the answer itself.
+
+#leetcode #python #algorithms #binarysearch #datastructures #codinginterview #programming #softwareengineering

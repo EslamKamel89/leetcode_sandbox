@@ -458,4 +458,6 @@ Sum of Square Numbers
 Online Stock Span
 String Compression
 Sqrt(x)
+String Compression
+Number of Provinces
 //

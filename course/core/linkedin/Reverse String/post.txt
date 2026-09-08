@@ -1,0 +1,45 @@
+344. Reverse String
+
+Sometimes the cleanest solution is just two pointers walking toward each other.
+
+For:
+
+`["h","e","l","l","o"]`
+
+Start at both ends:
+
+`left → h e l l o ← right`
+
+Swap them:
+
+`o e l l h`
+
+Move inward and repeat:
+
+`o l l e h`
+
+Done.
+
+The pattern is:
+
+while left <= right:
+    s[left], s[right] = s[right], s[left]
+    left += 1
+    right -= 1
+
+No second array.
+No reversed copy.
+Just swap and move inward.
+
+Time: O(n)
+Space: O(1)
+
+One small detail: `left <= right` means an odd-length string eventually swaps its middle character with itself. Completely harmless, although `left < right` would avoid that unnecessary final swap.
+
+The reusable pattern:
+
+Two ends → swap → move inward → stop when they meet.
+
+Simple problem, but this two-pointer idea shows up in much less friendly disguises later.
+
+#leetcode #python #algorithms #twopointers #datastructures #codinginterview #programming #softwareengineering

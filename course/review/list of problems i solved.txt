@@ -460,4 +460,6 @@ String Compression
 Sqrt(x)
 String Compression
 Number of Provinces
+Reverse String
+House Robber
 //

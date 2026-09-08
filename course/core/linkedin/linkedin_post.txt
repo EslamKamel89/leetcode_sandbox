@@ -55,6 +55,8 @@ Valid Palindrome
 Longest Repeating Character Replacement
 Trapping Rain Water
 Sqrt(x)
+Reverse String
+House Robber
 //
 
 

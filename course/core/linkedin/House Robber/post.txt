@@ -1,0 +1,46 @@
+198. House Robber
+
+Apparently, even robbing houses can become a Dynamic Programming problem.
+
+The constraint is simple:
+
+Rob a house → you can't rob its neighbor.
+
+So at every house `i`, there are only two choices:
+
+Rob it  → nums[i] + dp[i - 2]
+Skip it → dp[i - 1]
+
+Take whichever gives more:
+
+dp[i] = max(
+    nums[i] + dp[i - 2],
+    dp[i - 1]
+)
+
+For:
+
+nums = [2, 7, 9, 3, 1]
+
+the DP state becomes:
+
+[2, 7, 11, 11, 12]
+
+So the maximum is `12`.
+
+The important part is what `dp[i]` means:
+
+The maximum money we can safely rob from houses `0...i`.
+
+Once the state is clear, the recurrence almost writes itself.
+
+Time: O(n)
+Space: O(n) — and it can be optimized to O(1) because we only need the previous two states.
+
+The reusable DP pattern:
+
+At each position: take it or skip it → calculate both → keep the best.
+
+The robber may be questionable. The recurrence is perfectly legal.
+
+#leetcode #python #dynamicprogramming #algorithms #datastructures #codinginterview #programming #softwareengineering

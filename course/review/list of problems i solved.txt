@@ -462,4 +462,6 @@ String Compression
 Number of Provinces
 Reverse String
 House Robber
+Ransom Note
+Min Stack
 //

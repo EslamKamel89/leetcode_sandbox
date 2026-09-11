@@ -464,4 +464,6 @@ Reverse String
 House Robber
 Ransom Note
 Min Stack
+Merge Sorted Array  
+Minimum Depth of Binary Tree
 //

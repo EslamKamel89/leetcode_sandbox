@@ -1,0 +1,44 @@
+88. Merge Sorted Array
+
+The obvious approach is to merge from the beginning.
+
+The problem? You'd start overwriting values in nums1 that you still need. Not ideal. 😄
+
+The trick is to work backwards.
+
+We keep three pointers:
+
+m → last valid element in nums1
+n → last element in nums2
+write → last available position in nums1
+
+For:
+
+nums1 = [1,2,3,0,0,0]
+nums2 = [2,5,6]
+
+we compare from the end:
+
+3 vs 6 → write 6
+3 vs 5 → write 5
+3 vs 2 → write 3
+2 vs 2 → write 2
+
+Result:
+
+[1,2,2,3,5,6]
+
+The key idea:
+
+Place the largest remaining element into the largest remaining empty position.
+
+That lets us modify nums1 safely without extra storage.
+
+Time: O(m + n)
+Space: O(1)
+
+A useful two-pointer lesson:
+
+When writing forward risks destroying unread data, ask whether you can write backward instead.
+
+#leetcode #python #algorithms #twopointers #arrays #codinginterview #programming #softwareengineering

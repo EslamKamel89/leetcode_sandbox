@@ -1,0 +1,38 @@
+111. Minimum Depth of Binary Tree
+
+For minimum depth, BFS feels almost unfairly perfect.
+
+Why?
+
+BFS explores the tree level by level, so the first leaf we encounter must be the closest leaf to the root.
+
+For:
+
+[3,9,20,null,null,15,7]
+
+We process:
+
+Level 1 → 3
+Level 2 → 9, 20
+
+Node 9 is a leaf → immediately return 2.
+
+No need to explore the rest of the tree.
+
+The key detail is checking for a leaf, not just a missing child:
+
+if not node.left and not node.right:
+    return depth
+
+That distinction matters a lot for one-sided trees.
+
+Time: O(n) worst case
+Space: O(n) worst case
+
+The reusable pattern:
+
+Need the nearest/shortest level in an unweighted tree? Think BFS.
+
+Sometimes the best optimization is simply searching in the right order.
+
+#leetcode #python #bfs #binarytree #algorithms #datastructures #codinginterview #softwareengineering

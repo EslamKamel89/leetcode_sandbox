@@ -1,0 +1,41 @@
+735. Asteroid Collision
+
+Turns out space problems can also be stack problems.
+
+The key observation: a collision only happens when:
+
+stack[-1] > 0 and asteroid < 0
+
+In other words:
+
+→ meets ←
+
+Then compare their sizes:
+
+* Same size → both explode
+* Stack asteroid is larger → current asteroid explodes
+* Current asteroid is larger → pop the stack and keep checking
+
+That last case is the interesting one.
+
+For:
+
+[10, 2, -5]
+
+2 collides with -5 → 2 explodes.
+But -5 survives, so it immediately meets 10 → -5 explodes.
+
+Final result: [10]
+
+This is why the collision logic needs a while, not just an if.
+
+Time: O(n) — each asteroid is pushed/popped at most once.
+Space: O(n).
+
+Reusable pattern:
+
+When one incoming element may repeatedly eliminate previous elements, think stack + while loop.
+
+Asteroids explode. The amortized complexity survives.
+
+#leetcode #python #stack #algorithms #datastructures #codinginterview #softwareengineering

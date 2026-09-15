@@ -56,7 +56,7 @@ problems = [
     ("Next Greater Element I ", 0),
     ("Online Stock Span", 1),
     ("Remove K Digits", 0),
-    ("Asteroid Collision", 0),
+    ("Asteroid Collision", 1),
     ("Validate Stack Sequences", 0),
     ("Decode String", 0),
     ("Evaluate Reverse Polish Notation", 0),

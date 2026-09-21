@@ -11,7 +11,7 @@ problems = [
     ("3Sum", 0),
     ("Subarray Sum Equals K", 0),
     ("Continuous Subarray Sum", 0),
-    ("Linked List Cycle", 0),
+    ("Linked List Cycle", 1),
     ("Remove Duplicates from Sorted Array", 0),
     ("4Sum", 0),
     ("Linked List Cycle II", 0),

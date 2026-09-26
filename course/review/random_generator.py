@@ -36,7 +36,7 @@ problems = [
     ("String Compression", 0),
     ("K-diff Pairs", 0),
     ("Reverse String", 1),
-    ("Reverse String II", 0),
+    ("Reverse String II", 1),
     ("Intersection of Two Linked Lists", 0),
     ("Reverse Vowels", 0),
     ("Maximum Average Subarray I", 0),

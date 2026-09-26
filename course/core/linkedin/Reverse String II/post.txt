@@ -1,0 +1,48 @@
+541. Reverse String II
+
+This problem is basically:
+
+Reverse k, skip k, repeat.
+
+For:
+
+"abcdefg", k = 2
+
+Think of the string in blocks of 2k = 4:
+
+[a b | c d] [e f | g]
+
+Reverse only the first k characters of each block:
+
+[b a | c d] [f e | g]
+
+Result:
+
+"bacdfeg"
+
+The implementation becomes clean once we jump directly between blocks:
+
+for i in range(0, len(s), 2 * k):
+
+Then reverse:
+
+i → i + k - 1
+
+using two pointers.
+
+The nice part is the boundary handling:
+
+right = min(i + k - 1, len(s) - 1)
+
+So if fewer than k characters remain, we simply reverse whatever is left.
+
+Time: O(n)  
+Space: O(n) in Python because strings are immutable, so I convert the string to a list.
+
+The reusable idea:
+
+When an operation repeats over fixed-size groups, process the input in block-sized jumps instead of reasoning character by character.
+
+2k sounds intimidating until you realize half the characters are just enjoying the ride.
+
+#leetcode #python #algorithms #twopointers #strings #codinginterview #datastructures #softwareengineering

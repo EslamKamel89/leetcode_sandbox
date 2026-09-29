@@ -52,7 +52,7 @@ problems = [
     ("Baseball Game", 1),
     ("Simplify Path", 1),
     ("Longest Valid Parentheses", 0),
-    ("Daily Temperatures", 0),
+    ("Daily Temperatures", 1),
     ("Next Greater Element I ", 0),
     ("Online Stock Span", 1),
     ("Remove K Digits", 0),

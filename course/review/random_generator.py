@@ -47,7 +47,7 @@ problems = [
     ("Longest Substring with At Most K Distinct Characters", 1),
     ("Minimum Size Subarray Sum", 1),
     ("Find All Anagrams in a String", 0),
-    ("Valid Parentheses", 0),
+    ("Valid Parentheses", 1),
     ("Min Stack", 1),
     ("Baseball Game", 1),
     ("Simplify Path", 1),

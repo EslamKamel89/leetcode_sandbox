@@ -480,4 +480,6 @@ Reverse String II
 Find First and Last Position of Element in Sorted Array
 Find the Duplicate Number
 Daily Temperatures
+Valid Parentheses
+Rotting Oranges
 //

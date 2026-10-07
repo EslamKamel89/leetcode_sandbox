@@ -74,7 +74,7 @@ problems = [
     ("Valid Perfect Square", 1),
     ("Same Tree", 1),
     ("Invert Binary Tree", 0),
-    ("Maximum Depth of Binary Tree ", 0),
+    ("Maximum Depth of Binary Tree ", 1),
     ("Balanced Binary Tree", 1),
     ("Diameter of Binary Tree", 1),
     ("Symmetric Tree", 1),

@@ -5,15 +5,12 @@ class Solution:
             if char != "]":
                 stack.append(char)
             else:
-                temp = []
+                temp = ""
                 while stack and stack[-1] != "[":
-                    popped = stack.pop()
-                    temp.insert(0, popped)
+                    temp = stack.pop() + temp
                 stack.pop()
-                multiplier = ""
-                while stack and stack[-1] in "0123456789":
-                    popped = stack.pop()
-                    multiplier = popped + multiplier
-                # print(multiplier)
-                stack += temp * int(multiplier)
+                mult = ""
+                while stack and stack[-1].isnumeric():
+                    mult = stack.pop() + mult
+                stack.append(int(mult) * temp)
         return "".join(stack)

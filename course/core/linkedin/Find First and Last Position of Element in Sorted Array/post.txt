@@ -1,0 +1,41 @@
+34. Find First and Last Position of Element in Sorted Array
+
+Binary search found the target. Great.
+
+But the interviewer wants its first AND last occurrence.
+
+Apparently, finding it once wasn't enough.
+
+The trick? Two biased binary searches.
+
+For:
+
+nums = [5,7,7,8,8,10]  
+target = 8
+
+We run:
+
+- Left-biased search: Find 8, save its index, then keep searching left.
+- Right-biased search: Find 8, save its index, then keep searching right.
+
+Result: [3,4]
+
+The important part is what happens when we find the target:
+
+res = mid
+
+if left_biased:
+    right = mid - 1
+else:
+    left = mid + 1
+
+Instead of stopping at the first match, we keep searching for a better boundary.
+
+Time: O(log n)  
+Space: O(1)
+
+Key takeaway: Binary search isn't just about finding an element. It's also about finding the first or last position satisfying a condition.
+
+Sometimes finding the answer is only the beginning.
+
+#LeetCode #Python #BinarySearch #Algorithms #DataStructures #CodingInterview #SoftwareEngineering

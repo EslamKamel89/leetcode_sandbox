@@ -66,7 +66,7 @@ problems = [
     ("Search a 2D Matrix", 0),
     ("Find First and Last Position of Element in Sorted Array", 0),
     ("Find K Closest Elements ", 0),
-    ("Find Right Interval", 0),
+    ("Find Right Interval", 1),
     ("Search in Rotated Sorted Array", 0),
     ("Find Minimum in Rotated Sorted Array", 0),
     ("Sqrt(x)", 1),

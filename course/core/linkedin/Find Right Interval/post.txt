@@ -1,0 +1,43 @@
+436. Find Right Interval
+
+Another problem where sorting + binary search saves us from a nested-loop nightmare.
+
+The task?
+
+For each interval [start, end], find the interval with the smallest start ≥ end.
+
+For example:
+
+[[3,4], [2,3], [1,2]]
+
+The answer is [-1, 0, 1].
+
+My approach:
+
+1. Store each start with its original index.
+2. Sort the starts.
+3. For each interval's end, binary search for the smallest valid start.
+4. Return its original index, or -1 if none exists.
+
+The key trick is the binary search condition:
+
+if start < end:
+    left = mid + 1
+else:
+    res[i] = original_index
+    right = mid - 1
+
+Why move left after finding a valid start?
+
+Because finding a valid answer isn't enough. We need the smallest valid one.
+
+That's the classic lower bound pattern.
+
+Time: O(n log n)  
+Space: O(n)
+
+The lesson: When a problem asks for the smallest value satisfying a condition , binary search should be on your suspect list.
+
+No need to interrogate every interval individually.
+
+#leetcode #python #binarysearch #sorting #algorithms #datastructures #codinginterview #softwareengineering

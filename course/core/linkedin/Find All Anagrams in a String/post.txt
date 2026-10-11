@@ -1,0 +1,40 @@
+438. Find All Anagrams in a String
+
+Apparently, finding a substring isn't enough anymore. Now its letters can show up in any order.
+
+The trick? Fixed-size sliding window + frequency counting.
+
+For:
+
+s = "cbaebabacd"  
+p = "abc"
+
+We're looking for every substring of length 3 containing exactly:
+
+{a: 1, b: 1, c: 1}
+
+My approach:
+
+1. Build Counter(p) once.
+2. Check every window of length len(p).
+3. Compare its character frequencies with the pattern.
+4. Save the starting index when they match.
+
+We find:
+
+"cba" → index 0  
+"bac" → index 6
+
+Result: [0, 6]
+
+The key insight:
+
+Anagrams don't care about character order. They care about character frequency.
+
+My solution rebuilds the Counter for each window, giving O(|s| × |p|) time and O(|p|) temporary space.
+
+A natural next optimization is updating the counts as the window slides instead of rebuilding them, bringing the time down to O(|s|).
+
+Same characters, different order. Apparently, that's enough to cause an algorithm problem.
+
+#LeetCode #Python #SlidingWindow #HashMap #Algorithms #DataStructures #CodingInterview

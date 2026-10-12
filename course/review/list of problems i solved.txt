@@ -490,4 +490,6 @@ Find Right Interval
 Find First and Last Position of Element in Sorted Array
 Find All Anagrams in a String
 Next Greater Element I 
+Palindrome Linked List
+Graph Valid Tree
 //

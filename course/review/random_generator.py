@@ -57,7 +57,7 @@ problems = [
     ("Online Stock Span", 1),
     ("Remove K Digits", 0),
     ("Asteroid Collision", 1),
-    ("Validate Stack Sequences", 0),
+    ("Validate Stack Sequences", 1),
     ("Decode String", 0),
     ("Evaluate Reverse Polish Notation", 0),
     ("Basic Calculator II", 1),

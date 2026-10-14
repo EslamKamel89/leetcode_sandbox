@@ -494,4 +494,6 @@ Palindrome Linked List
 Graph Valid Tree
 Continuous Subarray Sum
 Validate Stack Sequences
+Sort Colors
+Remove K Digits
 //

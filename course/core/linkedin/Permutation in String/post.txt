@@ -1,0 +1,44 @@
+567. Permutation in String
+
+Another problem where Sliding Window saves us from checking every possible permutation.
+
+The task? Determine whether s2 contains any permutation of s1.
+
+For example:
+
+s1 = "ab"  
+s2 = "eidbaooo"
+
+The substring "ba" is a permutation of "ab".
+
+Result: True
+
+My approach:
+
+1. Build a frequency map for s1.
+2. Create a window of size len(s1) in s2.
+3. Slide the window one character at a time.
+4. Add the entering character, remove the leaving character, and compare frequencies.
+
+The important trick:
+
+window[entering] += 1
+window[leaving] -= 1
+
+if window[leaving] == 0:
+    del window[leaving]
+
+Removing zero-count entries keeps the frequency maps comparable.
+
+Key insight: Permutations don't care about character order, only frequency.
+
+Time: O(n)  
+Space: O(1) — at most 26 lowercase letters.
+
+The reusable pattern:
+
+Fixed-length substring + character frequencies = Sliding Window.
+
+Same letters, different order. The algorithm doesn't judge.
+
+#LeetCode #Python #SlidingWindow #Algorithms #DataStructures #CodingInterview #SoftwareEngineering

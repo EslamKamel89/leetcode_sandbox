@@ -67,6 +67,7 @@ Find Right Interval
 Find First and Last Position of Element in Sorted Array
 Find All Anagrams in a String
 Find Minimum in Rotated Sorted Array
+Permutation in String
 //
 
 

@@ -40,7 +40,7 @@ problems = [
     ("Intersection of Two Linked Lists", 0),
     ("Reverse Vowels", 0),
     ("Maximum Average Subarray I", 0),
-    ("Permutation in String", 0),
+    ("Permutation in String", 1),
     ("Longest Substring Without Repeating Characters", 0),
     ("Longest Repeating Character Replacement", 1),
     ("Fruit Into Baskets", 1),

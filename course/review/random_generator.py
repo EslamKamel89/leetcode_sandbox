@@ -6,7 +6,7 @@ problems = [
     ("Group Anagrams", 0),
     ("Top K Frequent Elements", 0),
     ("Ransom Note", 1),
-    ("Two Sum", 0),
+    ("Two Sum", 1),
     ("Two Sum II", 0),
     ("3Sum", 0),
     ("Subarray Sum Equals K", 0),

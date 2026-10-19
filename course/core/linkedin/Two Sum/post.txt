@@ -1,0 +1,44 @@
+1. Two Sum
+
+The problem that welcomes almost everyone to LeetCode.
+
+And immediately asks: Can you do better than O(n²)?
+
+Given:
+
+nums = [2,7,11,15]  
+target = 9
+
+Instead of checking every possible pair, I used a hash map.
+
+The idea is simple:
+
+For every number, calculate what’s missing:
+
+complement = target - num
+
+Then:
+
+- If the complement exists in the hash map → return both indices.
+- Otherwise → store the current number and its index.
+
+Example:
+
+2 → Need 7 → Store {2: 0}
+
+7 → Need 2 → Found it!
+
+Result: [0,1]
+
+The important detail? Check before storing.
+
+That prevents using the same element twice while still handling duplicates like [3,3].
+
+Time: O(n)  
+Space: O(n)
+
+Key takeaway: Sometimes the fastest way to find a pair isn't searching for both numbers. It's remembering what you've already seen.
+
+From nested loops to one pass. The hash map earns its salary.
+
+#LeetCode #Python #HashMap #Algorithms #DataStructures #CodingInterview #SoftwareEngineering

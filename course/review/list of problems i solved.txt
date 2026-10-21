@@ -504,4 +504,6 @@ Permutation in String
 Course Schedule
 Two Sum
 Lowest Common Ancestor of a Binary Tree
+Remove Element
+Minimum Path Sum
 //

@@ -507,3 +507,5 @@ Lowest Common Ancestor of a Binary Tree
 Remove Element
 Minimum Path Sum
 //
+Partition List
+Longest Increasing Subsequence

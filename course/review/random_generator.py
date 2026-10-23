@@ -30,7 +30,7 @@ problems = [
     ("Move Zeroes", 1),
     ("Sum of Square Numbers", 0),
     ("Two Sum IV", 0),
-    ("Partition List", 0),
+    ("Partition List", 1),
     ("Remove Duplicates (Linked List I, II)", 0),
     ("3Sum Smaller", 0),
     ("String Compression", 0),

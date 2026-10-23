@@ -70,6 +70,7 @@ Find Minimum in Rotated Sorted Array
 Permutation in String
 Two Sum
 Remove Element
+Partition List
 //
 
 

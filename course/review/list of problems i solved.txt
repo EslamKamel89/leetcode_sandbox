@@ -508,4 +508,6 @@ Remove Element
 Minimum Path Sum
 Partition List
 Longest Increasing Subsequence
+Find the Duplicate Number
+Course Schedule
 //

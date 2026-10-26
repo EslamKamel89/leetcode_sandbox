@@ -40,8 +40,8 @@ Diameter of Binary Tree
 Remove Duplicates from Sorted Array
 Minimum Path Sum
 Baseball Game
-Same Tree
 Longest Substring with At Most K Distinct Characters
+Same Tree
 Move Zeroes
 Symmetric Tree
 Next Greater Element I 
@@ -71,6 +71,7 @@ Permutation in String
 Two Sum
 Remove Element
 Partition List
+Longest Increasing Subsequence
 //
 
 

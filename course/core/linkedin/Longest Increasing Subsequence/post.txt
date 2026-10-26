@@ -1,0 +1,46 @@
+300. Longest Increasing Subsequence
+   
+Dynamic Programming strikes again. This time, the challenge is finding the longest strictly increasing subsequence.
+   
+Given:
+   
+nums = [10,9,2,5,3,7,101,18]
+   
+One valid longest subsequence is:
+   
+[2,3,7,101] → Length = 4
+   
+The trick? DP + looking backward.
+   
+My approach:
+   
+1. Initialize dp[i] = 1 because every number forms a subsequence by itself.
+2. For each number, check all previous numbers.
+3. If nums[i] > nums[j], we can extend the subsequence ending at j.
+   
+The recurrence:
+   
+dp[i] = max(dp[i], 1 + dp[j])
+   
+Final DP array:
+   
+[1,1,1,2,2,3,4,4]
+   
+Answer: 4
+   
+The key insight:
+   
+dp[i] represents the longest increasing subsequence ending exactly at index i.
+   
+Not the longest subsequence overall. That distinction makes the recurrence work.
+   
+Time: O(n²)  
+Space: O(n)
+   
+There's also an O(n log n) solution using binary search, but understanding the DP version first makes that optimization much easier to appreciate.
+   
+Reusable pattern: When the best answer at position i depends on earlier positions, think DP.
+   
+Sometimes moving forward requires looking backward. Very philosophical for an array problem.
+   
+#LeetCode #Python #DynamicProgramming #Algorithms #DataStructures #CodingInterview #SoftwareEngineering

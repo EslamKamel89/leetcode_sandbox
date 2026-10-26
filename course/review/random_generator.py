@@ -67,7 +67,7 @@ problems = [
     ("Find First and Last Position of Element in Sorted Array", 1),
     ("Find K Closest Elements ", 0),
     ("Find Right Interval", 1),
-    ("Search in Rotated Sorted Array", 0),
+    ("Search in Rotated Sorted Array", 1),
     ("Find Minimum in Rotated Sorted Array", 1),
     ("Sqrt(x)", 1),
     ("First Bad Version", 0),
@@ -100,7 +100,7 @@ problems = [
     ("Minimum Path Sum", 1),
     ("Edit Distance", 0),
     ("Coin Change", 0),
-    ("Longest Increasing Subsequence", 0),
+    ("Longest Increasing Subsequence", 1),
 ]
 
 n = 2

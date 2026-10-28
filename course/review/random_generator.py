@@ -12,7 +12,7 @@ problems = [
     ("Subarray Sum Equals K", 0),
     ("Continuous Subarray Sum", 0),
     ("Linked List Cycle", 1),
-    ("Remove Duplicates from Sorted Array", 0),
+    ("Remove Duplicates from Sorted Array", 1),
     ("4Sum", 0),
     ("Linked List Cycle II", 1),
     ("Remove Duplicates (II)", 1),

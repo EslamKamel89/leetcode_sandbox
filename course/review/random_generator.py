@@ -70,7 +70,7 @@ problems = [
     ("Search in Rotated Sorted Array", 1),
     ("Find Minimum in Rotated Sorted Array", 1),
     ("Sqrt(x)", 1),
-    ("First Bad Version", 0),
+    ("First Bad Version", 1),
     ("Valid Perfect Square", 1),
     ("Same Tree", 1),
     ("Invert Binary Tree", 0),

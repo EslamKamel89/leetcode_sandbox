@@ -63,7 +63,7 @@ problems = [
     ("Basic Calculator II", 1),
     ("Binary Search", 1),
     ("Search Insert Position", 1),
-    ("Search a 2D Matrix", 0),
+    ("Search a 2D Matrix", 1),
     ("Find First and Last Position of Element in Sorted Array", 1),
     ("Find K Closest Elements ", 0),
     ("Find Right Interval", 1),

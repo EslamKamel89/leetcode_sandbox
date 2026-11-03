@@ -17,7 +17,7 @@ problems = [
     ("Linked List Cycle II", 1),
     ("Remove Duplicates (II)", 1),
     ("Container With Most Water", 1),
-    ("Happy Number", 0),
+    ("Happy Number", 1),
     ("Remove Element", 1),
     ("Trapping Rain Water", 1),
     ("Find the Duplicate Number", 0),

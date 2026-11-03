@@ -1,0 +1,46 @@
+49. Group Anagrams
+   
+Different words. Same letters. Apparently, they belong to the same family.
+   
+The challenge? Group anagrams efficiently.
+   
+Given:
+   
+["eat", "tea", "tan", "ate", "nat", "bat"]
+   
+My approach uses Hash Map + Sorting.
+   
+The trick is simple: sort each word to create a common key.
+   
+- "eat" → "aet"
+- "tea" → "aet"
+- "ate" → "aet"
+- "tan" → "ant"
+- "nat" → "ant"
+   
+Words sharing the same sorted key belong in the same group.
+   
+The core logic:
+   
+groups = defaultdict(list)
+   
+for s in strs:
+    key = "".join(sorted(s))
+    groups[key].append(s)
+   
+Result:
+   
+[["eat","tea","ate"], ["tan","nat"], ["bat"]]
+   
+Key insight: Instead of comparing every pair of strings, transform each string into a canonical representation and group by that key.
+   
+Time: O(n × k log k)  
+Space: O(n × k)
+   
+Where n is the number of strings and k is the maximum string length.
+   
+Reusable pattern: When different inputs represent the same underlying thing, normalize them before grouping.
+   
+Different spelling order, same hash map address. No family arguments needed.
+   
+#LeetCode #Python #HashMap #Sorting #Algorithms #DataStructures #CodingInterview #SoftwareEngineering

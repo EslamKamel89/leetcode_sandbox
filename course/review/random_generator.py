@@ -3,7 +3,7 @@ import random
 problems = [
     ("Valid Anagram", 0),
     ("Contains Duplicate", 0),
-    ("Group Anagrams", 0),
+    ("Group Anagrams", 1),
     ("Top K Frequent Elements", 0),
     ("Ransom Note", 1),
     ("Two Sum", 1),

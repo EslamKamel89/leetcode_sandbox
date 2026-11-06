@@ -520,4 +520,6 @@ Subarray Sum Equals K
 Path Sum
 Group Anagrams
 Happy Number
+Remove Duplicates (Linked List I, II)
+Course Schedule
 //

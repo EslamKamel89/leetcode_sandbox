@@ -92,7 +92,7 @@ problems = [
     ("Clone Graph", 0),
     ("Rotting Oranges", 0),
     ("Graph Valid Tree", 0),
-    ("Course Schedule", 0),
+    ("Course Schedule", 1),
     ("Number of Provinces", 0),
     ("Climbing Stairs", 1),
     ("House Robber", 1),

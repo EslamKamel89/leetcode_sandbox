@@ -7,7 +7,7 @@ problems = [
     ("Top K Frequent Elements", 0),
     ("Ransom Note", 1),
     ("Two Sum", 1),
-    ("Two Sum II", 0),
+    ("Two Sum II", 1),
     ("3Sum", 0),
     ("Subarray Sum Equals K", 0),
     ("Continuous Subarray Sum", 0),

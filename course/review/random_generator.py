@@ -78,7 +78,7 @@ problems = [
     ("Balanced Binary Tree", 1),
     ("Diameter of Binary Tree", 1),
     ("Symmetric Tree", 1),
-    ("Path Sum", 0),
+    ("Path Sum", 1),
     ("Path Sum II", 1),
     ("Binary Tree Level Order Traversal", 1),
     ("Binary Tree Right Side View", 1),

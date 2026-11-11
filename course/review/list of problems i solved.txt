@@ -525,3 +525,5 @@ Course Schedule
 Two Sum II
 4Sum
 //
+String Compression
+Path Sum

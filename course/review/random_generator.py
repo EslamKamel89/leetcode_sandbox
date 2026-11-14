@@ -41,7 +41,7 @@ problems = [
     ("Reverse Vowels", 0),
     ("Maximum Average Subarray I", 0),
     ("Permutation in String", 1),
-    ("Longest Substring Without Repeating Characters", 0),
+    ("Longest Substring Without Repeating Characters", 1),
     ("Longest Repeating Character Replacement", 1),
     ("Fruit Into Baskets", 1),
     ("Longest Substring with At Most K Distinct Characters", 1),

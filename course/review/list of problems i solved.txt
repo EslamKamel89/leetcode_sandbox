@@ -528,4 +528,6 @@ String Compression
 Path Sum
 Longest Substring Without Repeating Characters
 Clone Graph
+Find the Duplicate Number
+Find K Closest Elements 
 //

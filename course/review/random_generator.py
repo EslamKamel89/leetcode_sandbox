@@ -1,7 +1,7 @@
 import random
 
 problems = [
-    ("Valid Anagram", 0),
+    ("Valid Anagram", 1),
     ("Contains Duplicate", 0),
     ("Group Anagrams", 1),
     ("Top K Frequent Elements", 0),

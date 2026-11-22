@@ -532,4 +532,6 @@ Find the Duplicate Number
 Find K Closest Elements 
 Valid Anagram
 Subarray Sum Equals K
+Intersection of Two Linked Lists
+Remove K Digits
 //

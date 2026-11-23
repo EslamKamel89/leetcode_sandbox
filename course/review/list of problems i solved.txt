@@ -534,4 +534,6 @@ Valid Anagram
 Subarray Sum Equals K
 Intersection of Two Linked Lists
 Remove K Digits
+Kth Smallest Element in a BST
 //
+Lowest Common Ancestor of a Binary Tree

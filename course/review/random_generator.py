@@ -84,7 +84,7 @@ problems = [
     ("Binary Tree Right Side View", 1),
     ("Minimum Depth of Binary Tree", 1),
     ("Validate Binary Search Tree", 0),
-    ("Kth Smallest Element in a BST", 0),
+    ("Kth Smallest Element in a BST", 1),
     ("Lowest Common Ancestor of a BST", 0),
     ("Lowest Common Ancestor of a Binary Tree", 0),
     ("House Robber III", 0),
